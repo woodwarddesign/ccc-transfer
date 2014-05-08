@@ -49,6 +49,7 @@ header,
       float: left;
       padding-right: $gutter;
       width: 50%;
+      margin-bottom: 0;
       &:after {
         @include clear-it;
       }
@@ -58,12 +59,18 @@ header,
       float: left;
       padding-right: $gutter;
       width: 25%;
+      margin-bottom: 0;
     }
     .region-sidebar-second {
       float: left;
       width: 25%;
+      margin-bottom: 0;
     }
-  }
+	}
+	
+	#content, .region-sidebar-first, .region-sidebar-second {
+		margin-bottom: 0rem;
+	}
 
 // one sidebar, sidebar first
 .one-sidebar.sidebar-first.push-left {
