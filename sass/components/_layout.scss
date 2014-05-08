@@ -1,0 +1,101 @@
+/**
+ * @file
+ * Positioning for a responsive layout.
+ *
+ * Define CSS classes to create a fluid grid layout with optional sidebars
+ * depending on whether blocks are placed in the left or right sidebars.
+ *
+ */
+
+$max-width: 1000px;
+$gutter: 35px;
+
+header,
+.preface,
+.content-wrapper,
+.region-footer,
+.region-menu {
+  clear: both;
+  display: block;
+  margin: 0 auto;
+  max-width: $max-width;
+  padding: 0 ($gutter / 2);
+}
+
+.region-menu {
+  padding: 0;
+}
+
+#content,
+.region-sidebar-first,
+.region-sidebar-second {
+  margin-bottom: $vert-spacing * 1.5;
+}
+
+@media all and (min-width: $tab) {
+
+
+}
+
+
+@media all and (min-width: $desk) {
+
+  .region-menu{
+    padding: 0 ($gutter / 2);
+  }
+
+  .two-sidebars {
+    #content {
+      float: left;
+      padding-right: $gutter;
+      width: 50%;
+      &:after {
+        @include clear-it;
+      }
+    }
+
+    .region-sidebar-first {
+      float: left;
+      padding-right: $gutter;
+      width: 25%;
+    }
+    .region-sidebar-second {
+      float: left;
+      width: 25%;
+    }
+  }
+
+// one sidebar, sidebar first
+.one-sidebar.sidebar-first.push-left {
+  #content {
+    clear: none;
+    float: left;
+    margin-left: -100%;
+    padding-right: $gutter;
+    width: 67%;
+  }
+  .region-sidebar-first {
+    float: left;
+    margin-left: 67%;
+    width: 33%;
+  }
+}
+
+// one sidebar, sidebar second
+.one-sidebar.sidebar-second {
+  #content {
+    float: left;
+    padding-right: $gutter;
+    width: 67%;
+    &:after {
+      @include clear-it;
+    }
+  }
+  .region-sidebar-second {
+    clear: none;
+    float: left;
+    width: 33%;
+  }
+}
+
+}

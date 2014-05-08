@@ -1,0 +1,139 @@
+// header region
+.header-wrapper,
+.preface-wrapper {
+  width: 100%;
+}
+
+img.header__logo-image {
+  height: 90px;
+}
+
+.header__logo-image {
+  float: left;
+  height: auto;
+  margin-right: 1em;
+  position: relative;
+}
+
+.header__name-and-slogan {
+  float: left;
+ }
+
+ .branding-wrapper {
+   clear: both;
+   overflow: hidden;
+   padding-top: 1em;
+}
+
+.region-branding {
+  position: relative;
+}
+
+@media all and (min-width: $tab) {
+
+  .branding-wrapper {
+    padding: 1em 0;
+  }
+
+}
+
+// preface region
+
+.preface-wrapper {
+  background: $gray;
+  margin-bottom: $vert-spacing;
+  @include clear-it;
+}
+
+.preface img {
+  height: auto;
+  width: 100%;
+}
+
+
+// content region
+
+#content {
+  background: $base-color;
+  min-height: 30em;
+}
+
+#content .messages {
+  padding: 0 20px;
+}
+
+.breadcrumb {
+  li {
+    display: inline-block;
+    list-style: none;
+    padding: 2rem 0;
+    font-family: $sans;
+    font-size: $base-font-size * .725;
+  }
+}
+
+.tech-support-button {
+  background: $gray;
+  padding: .5rem 1rem;
+  a {
+    width: 100%;
+  }
+}
+
+// postscript region
+
+
+// footer region
+
+footer {
+  background: $black;
+  clear: both;
+  overflow: hidden;
+  p,
+  li,
+  h4 {
+    color: $white;
+  }
+  p {
+    font-size: $base-font-size * .75;
+    margin-bottom: 0;
+  }
+}
+
+.region-footer {
+  padding: 10px 0;
+}
+
+.copyright {
+  clear: both;
+  overflow: hidden;
+  padding-bottom: $vert-spacing;
+  p {
+    float: left;
+    font-size: $base-font-size * .625;
+  }
+}
+
+// disclaimer blockquote
+#block-block-3 {
+  clear: both;
+  margin-bottom: $vert-spacing;
+  overflow: hidden;
+}
+
+@media all and (min-width: $tab) {
+
+  .disclaimer-left,
+  .disclaimer-right {
+    float: left;
+    width: 50%;
+  }
+
+  .disclaimer-left {
+    padding-right: 17px;
+  }
+
+  .disclaimer-right {
+    padding-left: 17px;
+  }
+}

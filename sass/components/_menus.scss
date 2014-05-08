@@ -1,0 +1,289 @@
+// menu styles
+
+ul li.leaf,
+ul li.leaf {
+  list-style: none;
+}
+
+.menu li a {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+li a.active {
+  color: $accent;
+}
+
+li a.active:hover  {
+  color: lighten($accent, 15%);
+}
+
+.menu-wrapper {
+  background: $black;
+  height: 2.75em;
+  ul {
+    line-height: 1;
+  }
+}
+
+.region-menu .menu,
+.footer-menu.menu {
+  background: $black;
+	float: left;
+  list-style: none;
+  margin-bottom: 0;
+  margin-top: .475em;
+}
+
+.js .region-menu .menu {
+  max-height: 0;
+  overflow: hidden;
+  &.active {
+    max-height: 50em;
+  }
+}
+
+.footer-menu.menu {
+  margin-bottom: $vert-spacing;
+}
+
+// multi-toggle styles
+
+a.menu-link {
+  background: url('../images/menu-icon.svg') no-repeat scroll 20px 1.05em transparent;
+  color: $white;
+  display: block;
+  float: left;
+  padding: .675em 0 0 45px;
+}
+
+.region-menu .menu {
+  clear: both;
+  width: 100%;
+  ul {
+    background: $black;
+    clear: both;
+  }
+}
+
+.region-menu .menu li.menuparent > a:after {
+	content: '+';
+	position: absolute;
+	top: -15px;
+	right: 0;
+	display: block;
+	font-size: 1.5em;
+	padding: 0.25em 0.5em;
+}
+
+.region-menu .menu li.menuparent > a.active:after {
+  content: "-";
+}
+
+.region-menu .menu li {
+  border-top: 1px solid lighten($black, 30%);
+  padding: .75em 20px;
+}
+
+.region-menu .menu li.menuparent {
+  padding-bottom: 1.25em;
+}
+
+.region-menu .menu li a,
+.footer-menu.menu li a {
+  color: $white;
+  font-family: $header-font-family;
+  &.active {
+    color: $white;
+  }
+}
+
+.region-menu .menu li a:hover,
+.region-menu .menu li a:focus,
+.region-menu .menu li a:active,
+.footer-menu.menu li a:hover,
+.footer-menu.menu li a:focus,
+.footer-menu.menu li a:active {
+  color: lighten($accent, 15%);
+  outline: none;
+}
+
+.region-menu .menu li ul,
+.footer-menu.menu li ul  {
+  clear: both;
+  list-style: none;
+  left: 20px;
+  margin-bottom: 0;
+  opacity: 1;
+  top: 35px;
+  @include trans-all;
+  li {
+    padding: .75rem .75rem .75rem 2rem;
+    border-bottom: 1px solid lighten($black, 60%);
+    list-style: none;
+    width: 200%;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.region-menu .menu li ul {
+  background: lighten($black, 30%);
+  margin: .5em -20px -1em -100px;
+  padding-left: 80px;
+  padding-right: 150px;
+  max-height: 50em;
+}
+
+.js .region-menu .menu li ul {
+  max-height: 0;
+  overflow: hidden;
+  @include trans-all;
+  &.active {
+    max-height: 50em;
+    margin-bottom: -1.25em;
+  }
+}
+
+.footer-menu.menu {
+  margin-top: 0;
+  width: 100%;
+  li {
+    border-bottom: 1px solid lighten($black, 30%);
+    display: block;
+    padding: .75em 30px;
+    margin-right: -30px;
+    margin-left: -30px;
+  }
+  &.first {
+    //border-top: none;
+  }
+}
+
+
+@media all and (min-width: $desk) {
+
+  .js .region-menu .menu,
+  .js .region-menu .menu li ul {
+    max-height: none;
+    overflow: visible;
+  }
+
+  .region-menu .menu li.menuparent > a:after {
+    content: '';
+
+  }
+
+  .region-menu .menu li.menuparent > a.active:after {
+    content: '';
+  }
+
+  .footer-menu.menu {
+    margin-top: .75em;
+    li {
+      border-bottom: 0;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  .region-menu .menu li.menuparent > a:after {
+    content: '';
+  }
+
+  .region-menu .menu li.menuparent {
+    padding-bottom: 1em;
+  }
+
+  .region-menu .menu li,
+  .footer-menu.menu li  {
+    border-right: 1px solid lighten($black, 30%);
+    border-top: none;
+    padding: .5em 1em;
+    &.first {
+      padding-left: 0;
+    }
+    &.last {
+      border-right: none;
+    }
+  }
+
+  .region-menu .menu li,
+  .footer-menu.menu li  {
+    display: inline-block;
+    font-size: $base-font-size * .75;
+    position: relative;
+  }
+
+  a.menu-link {
+      display: none;
+  }
+
+  .menu ul {
+    display: none;
+  }
+
+  .menu li:hover > ul {
+    border: 1px solid lighten($base-color, 7%);
+    display: block;
+  }
+
+  .region-menu .menu li ul {
+    background: $black;
+		position: absolute;
+		top: 2em;
+		left: 6.5em;
+		width: 12em;
+    li {
+      border-right: none;
+      display: inline-block;
+      margin-left: -5.25em;
+      overflow: hidden;
+      padding-left: 1.25em;
+      position: relative;
+      width: 15.2em;
+      a {
+        display: block;
+      }
+    }
+	}
+
+} //end media query
+
+
+.sidebars .menu li {
+  border-bottom: 1px solid lighten($gray, 15%);
+  margin-bottom: .5em;
+  padding-bottom: .5em;
+  padding-top: 0;
+}
+
+.sidebars .menu li.last {
+  border: none;
+}
+
+// node edit menu styles
+
+ul.primary {
+  border-bottom: 1px solid $dark-gray;
+   li {
+    display: inline-block;
+    list-style: none;
+    background-color: $gray;
+    border-color: $dark-gray;
+    border-style: solid solid none solid;
+    border-width: 1px;
+    height: auto;
+    margin-right: 0.5em;
+    padding: 0 1em;
+    a {
+
+      text-decoration: none;
+    }
+    &:active {
+      background-color: $white;
+    }
+  }
+}
