@@ -1,5 +1,45 @@
 // misc styles
+@media all and (min-width: $desk) { 
+	body.one-sidebar, body.two-sidebars {
+		background-image: url('../images/sidebar-bg.jpg');
+		background-position: 960px 0;
+		background-repeat: repeat-y;
+	}
+}
 
+@media all and (min-width: 1450px) {
+	body.two-sidebars {
+		background-position: 1120px;
+	}
+}
+
+@media all and (min-width: 1600px) {
+	
+	body.one-sidebar {
+		background-position: 1120px;
+	}
+	
+	body.two-sidebars {
+		background-position: 1275px;
+	}
+}
+
+@media all and (min-width: 1980px) {
+	
+	body.one-sidebar {
+		background-position: 1450px;
+	}
+	
+	body.two-sidebars {
+		background-position: 1450px;
+	}
+}
+
+@media all and (min-width: 2415px) {
+	body.two-sidebars {
+		background-position: 1680px;
+	}
+}
 
 
 // pager styles

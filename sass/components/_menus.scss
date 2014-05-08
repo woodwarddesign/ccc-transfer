@@ -20,16 +20,18 @@ li a.active:hover  {
 }
 
 .menu-wrapper {
-  background: $black;
-  height: 2.75em;
+  background: $dark-gray;
+	height: 2.75em;
   ul {
     line-height: 1;
   }
+  border-top: 3px solid $dark-gold;
+  border-bottom: 3px solid $dark-gold;
 }
 
 .region-menu .menu,
 .footer-menu.menu {
-  background: $black;
+  background: $dark-gray;
 	float: left;
   list-style: none;
   margin-bottom: 0;
@@ -51,18 +53,18 @@ li a.active:hover  {
 // multi-toggle styles
 
 a.menu-link {
-  background: url('../images/menu-icon.svg') no-repeat scroll 20px 1.05em transparent;
+  background: url('../images/menu-icon.svg') no-repeat scroll 20px .9em transparent;
   color: $white;
   display: block;
   float: left;
-  padding: .675em 0 0 45px;
+  padding: .475em 0 0 45px;
 }
 
 .region-menu .menu {
   clear: both;
   width: 100%;
   ul {
-    background: $black;
+    background: $dark-gray;
     clear: both;
   }
 }
@@ -92,10 +94,10 @@ a.menu-link {
 
 .region-menu .menu li a,
 .footer-menu.menu li a {
-  color: $white;
+  color: $light-blue;
   font-family: $header-font-family;
   &.active {
-    color: $white;
+//    color: $white;
   }
 }
 
@@ -165,6 +167,9 @@ a.menu-link {
 
 @media all and (min-width: $desk) {
 
+	#main-menu {
+		margin-top: 0;		
+	}
   .js .region-menu .menu,
   .js .region-menu .menu li ul {
     max-height: none;
@@ -194,7 +199,7 @@ a.menu-link {
   }
 
   .region-menu .menu li.menuparent {
-    padding-bottom: 1em;
+//    padding-bottom: 1em;
   }
 
   .region-menu .menu li,

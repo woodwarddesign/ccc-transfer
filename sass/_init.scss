@@ -20,7 +20,8 @@ $h6-font-size: 0.67 * $base-font-size;
 
 $courier: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
 $sans: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$sans-body: "Roboto", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$serif: "Roboto Slab", serif;
+$sans-body: "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
 // Variables for fonts.
 $body-font: $sans-body;
@@ -29,8 +30,8 @@ $body-font-weight: 300;
 $bold-font-weight: 500;
 $base-line-height: 1.4;
 
-$header-font-family: $sans;
-$header-font-weight: 300;
+$header-font-family: $serif;
+$header-font-weight: 100;
 $header-font-style: normal;
 $header-line-height: 110%;
 $header-top-margin: 0;
@@ -40,17 +41,26 @@ $header-bottom-margin: .5em;
 // Colors, etc.
 //
 $base-color: #fff;
-$text-color: #444;
-$white: #fefefe;
+$text-color: #2a2a2a;
+$white: #fff;
 $light-gray: #efefef;
 $gray: #ccc;
-$dark-gray: #bbb;
+$dark-gray: #3c3c3c;
 $accent: #237ad9;
 $black: #222;
 $error: #f5dfdf;
 $warning: #f8fad5;
 $info: #dfeff5;
 $success: #e8f5df;
+
+//
+// Theme Colors
+//
+
+$beige: #eee6d6;
+$light-beige: #f4f2ed;
+$light-blue: #cfe8ef;
+$dark-gold: #88753e;
 
 // The amount lists, blockquotes and comments are indented.
 $indent-amount: 30px;

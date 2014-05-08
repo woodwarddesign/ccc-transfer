@@ -34,7 +34,7 @@ input[type="password"],
 input[type="search"],
 input[type="tel"] {
   background: $white;
-  border: 1px solid $gray;
+  border: 1px solid $white;
   color: $black;
   font-size: $base-font-size;
   height: 2.25rem;
@@ -42,6 +42,21 @@ input[type="tel"] {
   outline: none;
   position: relative;
   width: 100%;
+  @include border-radius(4px);
+  @include box-shadow(inset 0 0 7px #aaaaaa);
+}
+
+@media all and (min-width: $desk) {
+	input[type='text'],
+	textarea,
+	select,
+	input[type="date"],
+	input[type="email"],
+	input[type="password"],
+	input[type="search"],
+	input[type="tel"] {
+		border-color: $light-beige;
+	}
 }
 
 textarea {
@@ -57,11 +72,12 @@ input[type="submit"],
 input[type="button"],
 .comment-links a,
 .button {
-  background: $accent;
-  border: 2px solid lighten($accent, 15%);
+  @include background-image(linear-gradient($white, $light-beige));
+  border: 1px solid #dcd5c7;
   border-radius: .5rem;
-  color: $white;
-  font-size: $base-font-size;
+  color: $black;
+  font-family: $serif;
+//  font-size: $base-font-size;
   margin: 4px 2px;
   padding: 8px 16px; padding: .5rem 1rem;
   text-shadow: none;
@@ -170,6 +186,7 @@ input[type="tel"]:focus {
   font: inherit;
   -webkit-appearance: none;
   width: 100%;
+  @include border-radius(30px);
 }
 
 .form-type-searchfield {
