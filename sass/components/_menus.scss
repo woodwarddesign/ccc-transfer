@@ -221,7 +221,7 @@ footer .region-footer p a:active {
 
   .region-menu .menu li,
   .footer-menu.menu li  {
-    border-right: 1px solid lighten($dark-gray, 30%);
+//    border-right: 1px solid lighten($dark-gray, 30%);
     border-top: none;
     padding: .5em 1em;
     &.first {
@@ -237,6 +237,7 @@ footer .region-footer p a:active {
     display: inline-block;
     font-size: $base-font-size * .7;
     position: relative;
+    font-weight: 100;
   }
 
   a.menu-link {
