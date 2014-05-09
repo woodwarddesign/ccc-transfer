@@ -63,11 +63,14 @@ img.header__logo-image {
   position: relative;
 }
 
-.preface img {
-  height: auto;
-  width: 100%;
+.preface {
+	line-height: 0;
+	
+	img {
+ 	 height: auto;
+ 	 width: 100%;
+	}
 }
-
 
 // content region
 
