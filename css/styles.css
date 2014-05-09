@@ -566,7 +566,7 @@ a:link,
 a:visited,
 a.active {
   border: none;
-  color: #237ad9;
+  color: #050483;
   font-weight: 300;
   text-decoration: none;
   -webkit-transition: color .3s;
@@ -591,7 +591,7 @@ img {
 a:hover,
 a:focus,
 a:active {
-  color: #63a1e6;
+  color: #0806cd;
   outline: none;
 }
 
@@ -757,12 +757,12 @@ nav {
 }
 /* line 90, ../sass/components/_views.scss */
 .view-school-search .filter.active {
-  background: #237ad9;
+  background: #050483;
   color: white;
 }
 /* line 93, ../sass/components/_views.scss */
 .view-school-search .filter.active:hover {
-  background: #237ad9;
+  background: #050483;
 }
 /* line 97, ../sass/components/_views.scss */
 .view-school-search .view-item {
@@ -954,7 +954,7 @@ input[type="tel"]:focus {
 
 /* line 110, ../sass/components/_forms.scss */
 .form-item {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   overflow: hidden;
 }
 
@@ -1093,13 +1093,13 @@ table thead th {
 /* line 34, ../sass/components/_tables.scss */
 table tbody > tr:nth-child(odd) > td,
 table tbody > tr:nth-child(odd) > th {
-  background-color: #237ad9;
+  background-color: #050483;
 }
 
 /* line 39, ../sass/components/_tables.scss */
 table tbody > tr:nth-child(even) > td,
 table tbody > tr:nth-child(even) > th {
-  background-color: #408ce0;
+  background-color: #0605a6;
 }
 
 /* line 1, ../sass/components/_typography.scss */
@@ -1136,7 +1136,7 @@ h6 a.active {
 }
 /* line 16, ../sass/components/_typography.scss */
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
-  color: #63a1e6;
+  color: #0806cd;
 }
 
 /* line 21, ../sass/components/_typography.scss */
@@ -1270,12 +1270,12 @@ ul li.leaf {
 
 /* line 14, ../sass/components/_menus.scss */
 li a.active {
-  color: #237ad9;
+  color: #050483;
 }
 
 /* line 18, ../sass/components/_menus.scss */
 li a.active:hover {
-  color: #63a1e6;
+  color: #0806cd;
 }
 
 /* line 22, ../sass/components/_menus.scss */
@@ -1376,7 +1376,7 @@ a.menu-link {
 .footer-menu.menu li a:hover,
 .footer-menu.menu li a:focus,
 .footer-menu.menu li a:active {
-  color: #63a1e6;
+  color: #0806cd;
   outline: none;
 }
 
