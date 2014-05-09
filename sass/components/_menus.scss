@@ -106,9 +106,16 @@ a.menu-link {
 .region-menu .menu li a:active,
 .footer-menu.menu li a:hover,
 .footer-menu.menu li a:focus,
-.footer-menu.menu li a:active {
-  color: lighten($accent, 15%);
+.footer-menu.menu li a:active,
+footer .region-footer p a {
+  color: darken($light-blue, 15%);
   outline: none;
+}
+
+footer .region-footer p a:hover,
+footer .region-footer p a:focus,
+footer .region-footer p a:active {
+	  color: darken($light-blue, 30%);
 }
 
 .region-menu .menu li ul,
