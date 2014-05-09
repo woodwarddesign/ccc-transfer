@@ -95,11 +95,22 @@ img.header__logo-image {
   }
 }
 
-.tech-support-button {
-  background: $gray;
-  padding: .5rem 1rem;
+h3.tech-support-button {
+  background: $accent;
+ 	@include border-radius(4px);
   a {
+  	display: block;
     width: 100%;
+    color: $light-blue;
+    font-size: .75em;
+		padding: .5rem 1rem;
+    &:hover {
+		  color: $white;	    
+    }
+	  }
+  &:hover  {
+	  background-color: lighten($accent, 15%);
+	  @include trans-all;
   }
 }
 
