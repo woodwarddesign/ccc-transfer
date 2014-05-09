@@ -70,7 +70,7 @@ img.header__logo-image {
 // content region
 
 #content {
-	padding: 0;
+	padding: 15px 0 0;
   background: transparent;
   min-height: 30em;
 }
@@ -104,6 +104,10 @@ img.header__logo-image {
 }
 
 // Sidebar regions
+
+.region-sidebar-first {
+	padding-top: 15px;
+}
 
 @media all and (min-width: $desk) {
 	.region-sidebar-first,
