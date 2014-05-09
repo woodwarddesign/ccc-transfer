@@ -675,7 +675,7 @@ nav {
 /* line 20, ../sass/components/_views.scss */
 .scrollable {
   border: 1px solid white;
-  background-color: #f4f2ed;
+  background-color: white;
   height: 15rem;
   margin-bottom: 2rem;
   padding-right: 12px !important;
@@ -683,35 +683,40 @@ nav {
 }
 
 /* line 29, ../sass/components/_views.scss */
+#block-block-7 {
+  margin-top: 1.5em;
+}
+
+/* line 33, ../sass/components/_views.scss */
 .scrollarea {
   background: #efefef !important;
   padding-right: 0 !important;
   width: 10px !important;
 }
-/* line 33, ../sass/components/_views.scss */
+/* line 37, ../sass/components/_views.scss */
 .scrollarea .scrollbar {
   background: #cccccc !important;
   border-radius: 0 !important;
   width: 10px !important;
 }
 
-/* line 41, ../sass/components/_views.scss */
+/* line 45, ../sass/components/_views.scss */
 .view-school-search .view-data {
   min-height: 15em;
   overflow: hidden;
   padding: 1em 1em 0 0em;
 }
-/* line 46, ../sass/components/_views.scss */
+/* line 50, ../sass/components/_views.scss */
 .view-school-search .views-row {
   overflow: hidden;
 }
-/* line 49, ../sass/components/_views.scss */
+/* line 53, ../sass/components/_views.scss */
 .view-school-search .views-column {
   float: left;
   padding: 0 1em 1em 0;
   width: 100%;
 }
-/* line 54, ../sass/components/_views.scss */
+/* line 58, ../sass/components/_views.scss */
 .view-school-search h3 {
   border: 1px solid #cccccc;
   height: 4.5em;
@@ -739,44 +744,44 @@ nav {
   -o-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 78, ../sass/components/_views.scss */
+/* line 82, ../sass/components/_views.scss */
 .view-school-search .filter-buttons .filter {
   background: none;
   border-bottom: 1px solid #cccccc;
   color: #2a2a2a;
   cursor: pointer;
-  padding: 1rem;
+  padding: .5rem 1em;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
 }
-/* line 85, ../sass/components/_views.scss */
+/* line 89, ../sass/components/_views.scss */
 .view-school-search .filter-buttons .filter:hover {
   background: #cccccc;
 }
-/* line 90, ../sass/components/_views.scss */
+/* line 94, ../sass/components/_views.scss */
 .view-school-search .filter.active {
   background: #237ad9;
   color: white;
 }
-/* line 93, ../sass/components/_views.scss */
+/* line 97, ../sass/components/_views.scss */
 .view-school-search .filter.active:hover {
   background: #237ad9;
 }
-/* line 97, ../sass/components/_views.scss */
+/* line 101, ../sass/components/_views.scss */
 .view-school-search .view-item {
   background: white;
 }
 
-/* line 103, ../sass/components/_views.scss */
+/* line 107, ../sass/components/_views.scss */
 .js .mix,
 .mix.no-result {
   display: none;
 }
 
 @media all and (min-width: 40em) {
-  /* line 109, ../sass/components/_views.scss */
+  /* line 113, ../sass/components/_views.scss */
   .view-school-search .views-column {
     padding: 0 1em 1em 0;
     width: 50%;
@@ -1666,17 +1671,23 @@ img.header__logo-image {
 
 /* line 72, ../sass/components/_regions.scss */
 #content {
-  padding: 30px 30px 30px 0;
+  padding: 0;
   background: transparent;
   min-height: 30em;
 }
 
-/* line 78, ../sass/components/_regions.scss */
+@media all and (min-width: 60em) {
+  /* line 79, ../sass/components/_regions.scss */
+  #content {
+    padding: 30px 30px 30px 0;
+  }
+}
+/* line 84, ../sass/components/_regions.scss */
 #content .messages {
   padding: 0 20px;
 }
 
-/* line 83, ../sass/components/_regions.scss */
+/* line 89, ../sass/components/_regions.scss */
 .breadcrumb li {
   display: inline-block;
   list-style: none;
@@ -1685,66 +1696,66 @@ img.header__logo-image {
   font-size: 14.5px;
 }
 
-/* line 92, ../sass/components/_regions.scss */
+/* line 98, ../sass/components/_regions.scss */
 .tech-support-button {
   background: #cccccc;
   padding: .5rem 1rem;
 }
-/* line 95, ../sass/components/_regions.scss */
+/* line 101, ../sass/components/_regions.scss */
 .tech-support-button a {
   width: 100%;
 }
 
 @media all and (min-width: 60em) {
-  /* line 104, ../sass/components/_regions.scss */
+  /* line 110, ../sass/components/_regions.scss */
   .region-sidebar-first,
   .region-sidebar-second {
     padding: 30px;
   }
 
-  /* line 109, ../sass/components/_regions.scss */
+  /* line 115, ../sass/components/_regions.scss */
   .one-sidebar .region-sidebar-first,
   .region-sidebar-second {
     background-color: #eee6d6;
     border-left: 1px solid white;
   }
 }
-/* line 120, ../sass/components/_regions.scss */
+/* line 126, ../sass/components/_regions.scss */
 footer {
   background: #3c3c3c;
   clear: both;
   overflow: hidden;
 }
-/* line 126, ../sass/components/_regions.scss */
+/* line 132, ../sass/components/_regions.scss */
 footer p,
 footer li,
 footer h4 {
   color: #cfe8ef;
 }
-/* line 129, ../sass/components/_regions.scss */
+/* line 135, ../sass/components/_regions.scss */
 footer p {
   font-size: 15px;
   margin-bottom: 0;
 }
 
-/* line 135, ../sass/components/_regions.scss */
+/* line 141, ../sass/components/_regions.scss */
 .region-footer {
   padding: 10px 0;
 }
 
-/* line 139, ../sass/components/_regions.scss */
+/* line 145, ../sass/components/_regions.scss */
 .copyright {
   clear: both;
   overflow: hidden;
   padding-bottom: 2rem;
 }
-/* line 143, ../sass/components/_regions.scss */
+/* line 149, ../sass/components/_regions.scss */
 .copyright p {
   float: left;
   font-size: 12.5px;
 }
 
-/* line 150, ../sass/components/_regions.scss */
+/* line 156, ../sass/components/_regions.scss */
 #block-block-3 {
   clear: both;
   margin-bottom: 2rem;
@@ -1752,19 +1763,19 @@ footer p {
 }
 
 @media all and (min-width: 40em) {
-  /* line 159, ../sass/components/_regions.scss */
+  /* line 165, ../sass/components/_regions.scss */
   .disclaimer-left,
   .disclaimer-right {
     float: left;
     width: 50%;
   }
 
-  /* line 164, ../sass/components/_regions.scss */
+  /* line 170, ../sass/components/_regions.scss */
   .disclaimer-left {
     padding-right: 17px;
   }
 
-  /* line 168, ../sass/components/_regions.scss */
+  /* line 174, ../sass/components/_regions.scss */
   .disclaimer-right {
     padding-left: 17px;
   }

@@ -19,11 +19,15 @@
 // the scrollbar in scool sort tool - uses vertiscroll
 .scrollable {
   border: 1px solid $white;
-  background-color: $light-beige;
+  background-color: lighten($light-beige, 50%);
   height: 15rem;
   margin-bottom: $vert-spacing;
   padding-right: 12px !important;
   overflow: scroll;
+}
+
+#block-block-7 {
+	margin-top: 1.5em;
 }
 
 .scrollarea {
@@ -80,7 +84,7 @@
         border-bottom: 1px solid $gray;
         color: $text-color;
         cursor: pointer;
-        padding: 1rem;
+        padding: .5rem 1em;
         @include trans-all;
         &:hover {
           background: $gray;

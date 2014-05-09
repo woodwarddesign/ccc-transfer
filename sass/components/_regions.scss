@@ -70,9 +70,15 @@ img.header__logo-image {
 // content region
 
 #content {
-	padding: 30px 30px 30px 0;
+	padding: 0;
   background: transparent;
   min-height: 30em;
+}
+
+@media all and (min-width: $desk) {
+	#content {
+			padding: 30px 30px 30px 0;
+	}
 }
 
 #content .messages {
