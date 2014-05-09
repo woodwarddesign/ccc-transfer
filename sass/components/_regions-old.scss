@@ -4,10 +4,6 @@
   width: 100%;
 }
 
-.header-wrapper {
-	@include background-image(linear-gradient(#dec066, #bea764));
-}
-
 img.header__logo-image {
   height: 90px;
 }
@@ -27,10 +23,6 @@ img.header__logo-image {
    clear: both;
    overflow: hidden;
    padding-top: 1em;
-   
-   .header__logo {
-	   display: block;
-   }
 }
 
 .region-branding {
@@ -45,19 +37,11 @@ img.header__logo-image {
 
 }
 
-@media all and (min-width: $desk) {
-	.branding-wrapper {
-		.header__logo {
-			display: inline;
-		}
-	}
-}
-
 // preface region
 
 .preface-wrapper {
   background: $gray;
-  margin-bottom: 0;
+  margin-bottom: $vert-spacing;
   @include clear-it;
 }
 
@@ -70,8 +54,7 @@ img.header__logo-image {
 // content region
 
 #content {
-	padding: 30px 30px 30px 0;
-  background: transparent;
+  background: $base-color;
   min-height: 30em;
 }
 
@@ -97,32 +80,19 @@ img.header__logo-image {
   }
 }
 
-// Sidebar regions
-
-@media all and (min-width: $desk) {
-	.region-sidebar-first,
-	.region-sidebar-second {
-		padding: 30px;
-	}
-	.region-sidebar-second {
-		background-color: $beige;
-		border-left: 1px solid $white;
-	}
-}
-
 // postscript region
 
 
 // footer region
 
 footer {
-  background: $dark-gray;
+  background: $black;
   clear: both;
   overflow: hidden;
   p,
   li,
   h4 {
-    color: $light-blue;
+    color: $white;
   }
   p {
     font-size: $base-font-size * .75;
