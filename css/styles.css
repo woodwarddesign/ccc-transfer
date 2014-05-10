@@ -1879,31 +1879,32 @@ header,
     padding: 0 17.5px;
   }
 
-  /* line 49, ../sass/components/_layout.scss */
-  .two-sidebars #main {
+  /* line 48, ../sass/components/_layout.scss */
+  #main {
     overflow: hidden;
   }
-  /* line 52, ../sass/components/_layout.scss */
+
+  /* line 53, ../sass/components/_layout.scss */
   .two-sidebars #content {
     float: left;
     padding-right: 35px;
     width: 50%;
     margin-bottom: 0;
   }
-  /* line 57, ../sass/components/_layout.scss */
+  /* line 58, ../sass/components/_layout.scss */
   .two-sidebars #content:after {
     content: "";
     display: table;
     clear: both;
   }
-  /* line 61, ../sass/components/_layout.scss */
+  /* line 62, ../sass/components/_layout.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
     padding-right: 35px;
     width: 25%;
     margin-bottom: 0;
   }
-  /* line 67, ../sass/components/_layout.scss */
+  /* line 68, ../sass/components/_layout.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 25%;
@@ -1911,12 +1912,12 @@ header,
     margin-bottom: -10000px;
   }
 
-  /* line 75, ../sass/components/_layout.scss */
+  /* line 76, ../sass/components/_layout.scss */
   #content, .region-sidebar-first, .region-sidebar-second {
     margin-bottom: 0;
   }
 
-  /* line 81, ../sass/components/_layout.scss */
+  /* line 82, ../sass/components/_layout.scss */
   .one-sidebar.sidebar-first.push-right #content {
     clear: none;
     float: left;
@@ -1924,26 +1925,28 @@ header,
     padding-right: 35px;
     width: 67%;
   }
-  /* line 88, ../sass/components/_layout.scss */
+  /* line 89, ../sass/components/_layout.scss */
   .one-sidebar.sidebar-first.push-right .region-sidebar-first {
     float: left;
     margin-left: 67%;
+    padding-bottom: 10000px;
+    margin-bottom: -10000px;
     width: 33%;
   }
 
-  /* line 97, ../sass/components/_layout.scss */
+  /* line 100, ../sass/components/_layout.scss */
   .one-sidebar.sidebar-second #content {
     float: left;
     padding-right: 35px;
     width: 67%;
   }
-  /* line 101, ../sass/components/_layout.scss */
+  /* line 104, ../sass/components/_layout.scss */
   .one-sidebar.sidebar-second #content:after {
     content: "";
     display: table;
     clear: both;
   }
-  /* line 105, ../sass/components/_layout.scss */
+  /* line 108, ../sass/components/_layout.scss */
   .one-sidebar.sidebar-second .region-sidebar-second {
     clear: none;
     float: left;
