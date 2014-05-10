@@ -45,10 +45,11 @@ header,
     padding: 0 ($gutter / 2);
   }
 
+  #main {
+    overflow: hidden;
+  }
+
   .two-sidebars {
-    #main {
-      overflow: hidden;
-    }
     #content {
       float: left;
       padding-right: $gutter;
@@ -88,6 +89,8 @@ header,
   .region-sidebar-first {
     float: left;
     margin-left: 67%;
+    padding-bottom: 10000px;
+    margin-bottom: -10000px;
     width: 33%;
   }
 }
