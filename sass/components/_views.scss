@@ -18,7 +18,8 @@
 
 // the scrollbar in scool sort tool - uses vertiscroll
 .scrollable {
-  border: 2px solid $gray;
+  border: 1px solid $white;
+  background-color: lighten($light-beige, 50%);
   height: 15rem;
   margin-bottom: $vert-spacing;
   padding-right: 12px !important;
@@ -38,17 +39,16 @@
 
   .view-school-search {
     .view-data {
-      background: $light-gray;
       min-height: 15em;
       overflow: hidden;
-      padding: 1em 0 0 1em;
+      padding: 1em 0em 0 0em;
     }
     .views-row {
       overflow: hidden;
     }
     .views-column {
       float: left;
-      padding: 0 1em 1em 0;
+      padding: 0 0em 1em 0;
       width: 100%;
     }
     h3 {
@@ -72,6 +72,7 @@
       -ms-flex-pack: center;
       -webkit-justify-content: center;
       justify-content: center;
+      @include border-radius(4px);
     }
     .filter-buttons {
       .filter  {
@@ -79,7 +80,7 @@
         border-bottom: 1px solid $gray;
         color: $text-color;
         cursor: pointer;
-        padding: 1rem;
+        padding: .5rem 1em;
         @include trans-all;
         &:hover {
           background: $gray;
