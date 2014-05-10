@@ -167,18 +167,26 @@ a.menu-link {
 
 @media all and (min-width: $desk) {
 
+ .menu-wrapper {
+   height: 2.25em;
+ }
+
+ .region-menu .menu li.menuparent {
+   padding-bottom: .5em;
+ }
+
 	#main-menu {
-		margin-top: 0;		
+		margin-top: 0;
 	}
   .js .region-menu .menu,
   .js .region-menu .menu li ul {
     max-height: none;
     overflow: visible;
+    z-index: 1000;
   }
 
   .region-menu .menu li.menuparent > a:after {
     content: '';
-
   }
 
   .region-menu .menu li.menuparent > a.active:after {
@@ -192,14 +200,6 @@ a.menu-link {
       margin-left: 0;
       margin-right: 0;
     }
-  }
-
-  .region-menu .menu li.menuparent > a:after {
-    content: '';
-  }
-
-  .region-menu .menu li.menuparent {
-//    padding-bottom: 1em;
   }
 
   .region-menu .menu li,
@@ -236,9 +236,9 @@ a.menu-link {
   }
 
   .region-menu .menu li ul {
-    background: $black;
+    background: $dark-gray;
 		position: absolute;
-		top: 2em;
+		top: 1.55em;
 		left: 6.5em;
 		width: 12em;
     li {
