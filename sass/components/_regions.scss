@@ -56,23 +56,34 @@ img.header__logo-image {
 // preface region
 
 .preface-wrapper {
-  background: $gray;
+  background: $off-white;
   margin-bottom: 0;
+  @include box-shadow(0 0 7px lighten($black, 50%));
   @include clear-it;
+  position: relative;
 }
 
-.preface img {
-  height: auto;
-  width: 100%;
-}
+.preface {
+	line-height: 0;
 
+	img {
+ 	 height: auto;
+ 	 width: 100%;
+	}
+}
 
 // content region
 
 #content {
-	padding: 30px 30px 0 0;
+	padding: 15px 0 0;
   background: transparent;
   min-height: 30em;
+}
+
+@media all and (min-width: $desk) {
+	#content {
+			padding: 30px 30px 30px 0;
+	}
 }
 
 #content .messages {
@@ -89,21 +100,39 @@ img.header__logo-image {
   }
 }
 
-.tech-support-button {
-  background: $gray;
-  padding: .5rem 1rem;
+h3.tech-support-button {
+  background: $accent;
+ 	@include border-radius(4px);
+ 	@include box-shadow (2px 2px 4px lighten($black, 50%));
   a {
+  	display: block;
     width: 100%;
+    color: $light-blue;
+    font-size: .75em;
+		padding: .5rem 1rem;
+    &:hover {
+		  color: $white;
+    }
+	  }
+  &:hover  {
+	  background-color: lighten($accent, 15%);
+	  @include trans-all;
   }
 }
 
 // Sidebar regions
+
+.region-sidebar-first {
+	padding-top: 15px;
+}
 
 @media all and (min-width: $desk) {
 	.region-sidebar-first,
 	.region-sidebar-second {
 		padding: 30px;
 	}
+
+	.one-sidebar .region-sidebar-first,
 	.region-sidebar-second {
 		background-color: $beige;
 		border-left: 1px solid $white;
