@@ -27,7 +27,7 @@ img.header__logo-image {
    clear: both;
    overflow: hidden;
    padding-top: 1em;
-   
+
    .header__logo {
 	   display: block;
    }
@@ -65,7 +65,7 @@ img.header__logo-image {
 
 .preface {
 	line-height: 0;
-	
+
 	img {
  	 height: auto;
  	 width: 100%;
@@ -111,7 +111,7 @@ h3.tech-support-button {
     font-size: .75em;
 		padding: .5rem 1rem;
     &:hover {
-		  color: $white;	    
+		  color: $white;
     }
 	  }
   &:hover  {
@@ -131,12 +131,15 @@ h3.tech-support-button {
 	.region-sidebar-second {
 		padding: 30px;
 	}
-	
+
 	.one-sidebar .region-sidebar-first,
 	.region-sidebar-second {
 		background-color: $beige;
 		border-left: 1px solid $white;
 	}
+  #content {
+    padding-bottom: 30px;
+  }
 }
 
 // postscript region

@@ -175,14 +175,14 @@ footer .region-footer p a:active {
 
 @media all and (min-width: $desk) {
 
-.menu-wrapper {
-  height: 3.15em;
-  max-height: 35px;
-}
+  .menu-wrapper {
+    height: 3.15em;
+    max-height: 35px;
+  }
 
 	#main-menu {
 		margin-top: 1px;
-		text-align: center;		
+		text-align: center;
 		li {
 
 		}
@@ -191,11 +191,11 @@ footer .region-footer p a:active {
   .js .region-menu .menu li ul {
     max-height: none;
     overflow: visible;
+    z-index: 1000;
   }
 
   .region-menu .menu li.menuparent > a:after {
     content: '';
-
   }
 
   .region-menu .menu li.menuparent > a.active:after {
