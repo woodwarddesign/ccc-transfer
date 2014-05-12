@@ -59,6 +59,14 @@ input[type="tel"] {
 	input[type="search"],
 	input[type="tel"] {
 		border-color: $light-beige;
+		padding: 10px;
+		
+		@include input-placeholder {
+			font-style: italic;
+			font-weight: 100;
+			font-size: .8em;
+			font-family: $sans;
+		}
 	}
 }
 

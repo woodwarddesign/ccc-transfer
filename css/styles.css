@@ -1019,9 +1019,80 @@ input[type="tel"]:hover {
   input[type="search"],
   input[type="tel"] {
     border-color: #f4f2ed;
+    padding: 10px;
+  }
+  /* line 57, ../sass/_mixins.scss */
+  input[type='text'].placeholder,
+  textarea.placeholder,
+  select.placeholder,
+  input[type="date"].placeholder,
+  input[type="email"].placeholder,
+  input[type="password"].placeholder,
+  input[type="search"].placeholder,
+  input[type="tel"].placeholder {
+    font-style: italic;
+    font-weight: 100;
+    font-size: .8em;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  /* line 58, ../sass/_mixins.scss */
+  input[type='text']:-moz-placeholder,
+  textarea:-moz-placeholder,
+  select:-moz-placeholder,
+  input[type="date"]:-moz-placeholder,
+  input[type="email"]:-moz-placeholder,
+  input[type="password"]:-moz-placeholder,
+  input[type="search"]:-moz-placeholder,
+  input[type="tel"]:-moz-placeholder {
+    font-style: italic;
+    font-weight: 100;
+    font-size: .8em;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  /* line 59, ../sass/_mixins.scss */
+  input[type='text']::-moz-placeholder,
+  textarea::-moz-placeholder,
+  select::-moz-placeholder,
+  input[type="date"]::-moz-placeholder,
+  input[type="email"]::-moz-placeholder,
+  input[type="password"]::-moz-placeholder,
+  input[type="search"]::-moz-placeholder,
+  input[type="tel"]::-moz-placeholder {
+    font-style: italic;
+    font-weight: 100;
+    font-size: .8em;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  /* line 60, ../sass/_mixins.scss */
+  input[type='text']:-ms-input-placeholder,
+  textarea:-ms-input-placeholder,
+  select:-ms-input-placeholder,
+  input[type="date"]:-ms-input-placeholder,
+  input[type="email"]:-ms-input-placeholder,
+  input[type="password"]:-ms-input-placeholder,
+  input[type="search"]:-ms-input-placeholder,
+  input[type="tel"]:-ms-input-placeholder {
+    font-style: italic;
+    font-weight: 100;
+    font-size: .8em;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  /* line 61, ../sass/_mixins.scss */
+  input[type='text']::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder,
+  select::-webkit-input-placeholder,
+  input[type="date"]::-webkit-input-placeholder,
+  input[type="email"]::-webkit-input-placeholder,
+  input[type="password"]::-webkit-input-placeholder,
+  input[type="search"]::-webkit-input-placeholder,
+  input[type="tel"]::-webkit-input-placeholder {
+    font-style: italic;
+    font-weight: 100;
+    font-size: .8em;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 }
-/* line 65, ../sass/components/_forms.scss */
+/* line 73, ../sass/components/_forms.scss */
 textarea {
   display: block;
   box-sizing: border-box;
@@ -1030,7 +1101,7 @@ textarea {
   width: 100%;
 }
 
-/* line 77, ../sass/components/_forms.scss */
+/* line 85, ../sass/components/_forms.scss */
 button, input[type="reset"],
 input[type="submit"],
 input[type="button"],
@@ -1054,7 +1125,7 @@ input[type="button"],
   -o-transition: all .3s;
   transition: all .3s;
 }
-/* line 88, ../sass/components/_forms.scss */
+/* line 96, ../sass/components/_forms.scss */
 button:hover, input[type="reset"]:hover,
 input[type="submit"]:hover,
 input[type="button"]:hover,
@@ -1063,7 +1134,7 @@ input[type="button"]:hover,
   background: #050483;
 }
 
-/* line 98, ../sass/components/_forms.scss */
+/* line 106, ../sass/components/_forms.scss */
 button:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover,
@@ -1074,7 +1145,7 @@ input[type="button"]:hover,
   cursor: pointer;
 }
 
-/* line 111, ../sass/components/_forms.scss */
+/* line 119, ../sass/components/_forms.scss */
 button:focus,
 input[type='text']:focus,
 textarea:focus,
@@ -1087,13 +1158,13 @@ input[type="tel"]:focus {
   outline: none;
 }
 
-/* line 116, ../sass/components/_forms.scss */
+/* line 124, ../sass/components/_forms.scss */
 .form-item {
   margin-bottom: 0;
   overflow: hidden;
 }
 
-/* line 124, ../sass/components/_forms.scss */
+/* line 132, ../sass/components/_forms.scss */
 .form-item-pass-pass1,
 .form-item-pass-pass2 {
   overflow: visible;
@@ -1101,25 +1172,25 @@ input[type="tel"]:focus {
   width: 40%;
 }
 
-/* line 130, ../sass/components/_forms.scss */
+/* line 138, ../sass/components/_forms.scss */
 .page-user input.password-confirm {
   margin-top: 0;
 }
 
-/* line 135, ../sass/components/_forms.scss */
+/* line 143, ../sass/components/_forms.scss */
 .form-type-password-confirm {
   padding-bottom: 3rem;
   position: relative;
 }
 
-/* line 141, ../sass/components/_forms.scss */
+/* line 149, ../sass/components/_forms.scss */
 .password-strength,
 .password-confirm {
   display: block;
   margin-bottom: .5rem;
   padding: .5rem 0;
 }
-/* line 147, ../sass/components/_forms.scss */
+/* line 155, ../sass/components/_forms.scss */
 .password-strength .password-indicator div,
 .password-confirm .password-indicator div {
   background: #f76558;
@@ -1127,35 +1198,35 @@ input[type="tel"]:focus {
   width: 0;
 }
 
-/* line 154, ../sass/components/_forms.scss */
+/* line 162, ../sass/components/_forms.scss */
 .password-strength-title {
   margin-bottom: .5rem;
 }
 
-/* line 158, ../sass/components/_forms.scss */
+/* line 166, ../sass/components/_forms.scss */
 .password-strength-text {
   font-size: 15px;
   font-weight: bold;
 }
 
-/* line 164, ../sass/components/_forms.scss */
+/* line 172, ../sass/components/_forms.scss */
 .password-confirm .error,
 .password-confirm .ok {
   font-size: 15px;
   font-weight: bold;
 }
 
-/* line 169, ../sass/components/_forms.scss */
+/* line 177, ../sass/components/_forms.scss */
 .password-strength-text {
   margin-top: .5rem;
 }
 
-/* line 173, ../sass/components/_forms.scss */
+/* line 181, ../sass/components/_forms.scss */
 .password-confirm .error {
   margin-top: .3rem;
 }
 
-/* line 177, ../sass/components/_forms.scss */
+/* line 185, ../sass/components/_forms.scss */
 .password-suggestions {
   background: #efefef;
   border: 1px solid #cccccc;
@@ -1164,7 +1235,7 @@ input[type="tel"]:focus {
   width: 40%;
 }
 
-/* line 187, ../sass/components/_forms.scss */
+/* line 195, ../sass/components/_forms.scss */
 .block-search input[type="search"] {
   background-image: url(../images/search-icon.png);
   background-repeat: no-repeat;
@@ -1188,12 +1259,12 @@ input[type="tel"]:focus {
   border-radius: 30px;
 }
 
-/* line 201, ../sass/components/_forms.scss */
+/* line 209, ../sass/components/_forms.scss */
 .form-type-searchfield {
   padding-right: 5px;
 }
 
-/* line 205, ../sass/components/_forms.scss */
+/* line 213, ../sass/components/_forms.scss */
 .block-search .form-actions {
   display: none;
 }
