@@ -13,7 +13,7 @@ img.header__logo-image {
 }
 
 .header__logo-image {
-  float: left;
+//  float: left;
   height: auto;
   margin-right: 1em;
   position: relative;
@@ -35,12 +35,18 @@ img.header__logo-image {
 
 .region-branding {
   position: relative;
+  .header__logo {
+	    text-align: center;
+  }
 }
 
 @media all and (min-width: $tab) {
 
   .branding-wrapper {
     padding: 1em 0;
+    .header__logo {
+	    display: inline-block;
+    }
   }
 
 }
@@ -48,7 +54,7 @@ img.header__logo-image {
 @media all and (min-width: $desk) {
 	.branding-wrapper {
 		.header__logo {
-			display: inline;
+//			display: inline;
 		}
 	}
 }
