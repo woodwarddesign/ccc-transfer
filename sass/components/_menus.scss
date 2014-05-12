@@ -84,7 +84,10 @@ a.menu-link {
 }
 
 .region-menu .menu li {
-  border-top: 1px solid lighten($dark-gray, 30%);
+//  border-top: 1px solid lighten($dark-gray, 30%);
+	background-image: url('../images/dh-line.png');
+	background-repeat: repeat-x;
+	background-position: top left;
   padding: .75em 20px;
 }
 
@@ -161,7 +164,10 @@ footer .region-footer p a:active {
   margin-top: 0;
   width: 100%;
   li {
-    border-bottom: 1px solid lighten($black, 30%);
+//    border-bottom: 1px solid lighten($black, 30%);
+		background-image: url('../images/dh-line.png');
+		background-repeat: repeat-x;
+		background-position: bottom left;
     display: block;
     padding: .75em 30px;
     margin-right: -30px;
