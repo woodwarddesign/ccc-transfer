@@ -63,7 +63,8 @@ h6, h6 a {
 }
 
 h1#page-title,
-.sidebars h2 {
+.region-sidebar-second h2,
+.region-sidebar-first h2 {
 	
 	&:before {
 		content: " ";
