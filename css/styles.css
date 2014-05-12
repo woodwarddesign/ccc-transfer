@@ -660,32 +660,33 @@ nav {
   padding: 20px 30px;
 }
 
-/* line 9, ../sass/components/_views.scss */
+/* line 10, ../sass/components/_views.scss */
 .view .odd,
-.view .even {
+.view .even,
+.view .item-list {
   background-image: url("../images/lh-line.png");
   background-repeat: repeat-x;
   background-position: top left;
   padding-top: 1em;
 }
-/* line 16, ../sass/components/_views.scss */
+/* line 17, ../sass/components/_views.scss */
 .view p {
   margin-bottom: 1em;
 }
 
-/* line 21, ../sass/components/_views.scss */
+/* line 22, ../sass/components/_views.scss */
 .view .row {
   border-bottom: 1px solid white;
   margin-bottom: 4rem;
   padding-bottom: 4rem;
 }
 
-/* line 27, ../sass/components/_views.scss */
+/* line 28, ../sass/components/_views.scss */
 .view .row.last {
   border-bottom: none;
 }
 
-/* line 34, ../sass/components/_views.scss */
+/* line 35, ../sass/components/_views.scss */
 .scrollable {
   border: 1px solid white;
   background-color: white;
@@ -695,36 +696,36 @@ nav {
   overflow: scroll;
 }
 
-/* line 43, ../sass/components/_views.scss */
+/* line 44, ../sass/components/_views.scss */
 .scrollarea {
   background: #efefef !important;
   padding-right: 0 !important;
   width: 10px !important;
 }
-/* line 47, ../sass/components/_views.scss */
+/* line 48, ../sass/components/_views.scss */
 .scrollarea .scrollbar {
   background: #cccccc !important;
   border-radius: 0 !important;
   width: 10px !important;
 }
 
-/* line 55, ../sass/components/_views.scss */
+/* line 56, ../sass/components/_views.scss */
 .view-school-search .view-data {
   min-height: 15em;
   overflow: hidden;
   padding: 1em 0em 0 0em;
 }
-/* line 60, ../sass/components/_views.scss */
+/* line 61, ../sass/components/_views.scss */
 .view-school-search .views-row {
   overflow: hidden;
 }
-/* line 63, ../sass/components/_views.scss */
+/* line 64, ../sass/components/_views.scss */
 .view-school-search .views-column {
   float: left;
   padding: 0 0em 1em 0;
   width: 100%;
 }
-/* line 68, ../sass/components/_views.scss */
+/* line 69, ../sass/components/_views.scss */
 .view-school-search h3 {
   border: 1px solid #cccccc;
   height: 4.5em;
@@ -752,7 +753,7 @@ nav {
   -o-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 92, ../sass/components/_views.scss */
+/* line 93, ../sass/components/_views.scss */
 .view-school-search .filter-buttons .filter {
   background: none;
   border-bottom: 1px solid #cccccc;
@@ -764,32 +765,32 @@ nav {
   -o-transition: all .3s;
   transition: all .3s;
 }
-/* line 99, ../sass/components/_views.scss */
+/* line 100, ../sass/components/_views.scss */
 .view-school-search .filter-buttons .filter:hover {
   background: #cccccc;
 }
-/* line 104, ../sass/components/_views.scss */
+/* line 105, ../sass/components/_views.scss */
 .view-school-search .filter.active {
   background: #050483;
   color: white;
 }
-/* line 107, ../sass/components/_views.scss */
+/* line 108, ../sass/components/_views.scss */
 .view-school-search .filter.active:hover {
   background: #050483;
 }
-/* line 111, ../sass/components/_views.scss */
+/* line 112, ../sass/components/_views.scss */
 .view-school-search .view-item {
   background: white;
 }
 
-/* line 117, ../sass/components/_views.scss */
+/* line 118, ../sass/components/_views.scss */
 .js .mix,
 .mix.no-result {
   display: none;
 }
 
 @media all and (min-width: 40em) {
-  /* line 123, ../sass/components/_views.scss */
+  /* line 124, ../sass/components/_views.scss */
   .view-school-search .views-column {
     padding: 0 1em 1em 0;
     width: 50%;
@@ -1212,58 +1213,79 @@ h6, h6 a {
   font-size: 13.4px;
 }
 
+/* line 66, ../sass/components/_typography.scss */
+h1#page-title,
+.sidebars h2 {
+  font-size: 1.25em;
+  margin-bottom: 0;
+  padding: .25em 0;
+}
+/* line 68, ../sass/components/_typography.scss */
+h1#page-title:before,
+.sidebars h2:before {
+  content: " ";
+  display: block;
+  position: relative;
+  top: -5px;
+  height: 2px;
+  width: 100%;
+  background-image: url("../images/lh-line.png");
+  background-repeat: repeat-x;
+  background-position: top left;
+}
+
 @media all and (min-width: 40em) {
-  /* line 67, ../sass/components/_typography.scss */
+  /* line 87, ../sass/components/_typography.scss */
   body {
     font-size: 18.5px;
   }
-  /* line 69, ../sass/components/_typography.scss */
+  /* line 89, ../sass/components/_typography.scss */
   body.two-sidebars {
     font-size: 16.5px;
   }
-  /* line 72, ../sass/components/_typography.scss */
+  /* line 92, ../sass/components/_typography.scss */
   body.two-sidebars h2, body.two-sidebars h2 a {
     font-size: 27.75px;
   }
-  /* line 76, ../sass/components/_typography.scss */
+  /* line 96, ../sass/components/_typography.scss */
   body.two-sidebars h3, body.two-sidebars h3 a, body.two-sidebars h2.block__title, body.two-sidebars h2.pane-title {
     font-size: 24.235px;
   }
-  /* line 80, ../sass/components/_typography.scss */
+  /* line 100, ../sass/components/_typography.scss */
   body.two-sidebars h4, body.two-sidebars h4 a {
     font-size: 18.5px;
   }
-  /* line 84, ../sass/components/_typography.scss */
+  /* line 104, ../sass/components/_typography.scss */
   body.two-sidebars h5, body.two-sidebars h5 a {
     font-size: 15.355px;
   }
-  /* line 88, ../sass/components/_typography.scss */
+  /* line 108, ../sass/components/_typography.scss */
   body.two-sidebars h6, body.two-sidebars h6 a {
     font-size: 12.395px;
   }
 }
 @media all and (min-width: 60em) {
-  /* line 98, ../sass/components/_typography.scss */
+  /* line 118, ../sass/components/_typography.scss */
   body {
     font-size: 16.5px;
   }
-  /* line 102, ../sass/components/_typography.scss */
+  /* line 122, ../sass/components/_typography.scss */
   body.two-sidebars h2, body.two-sidebars h2 a {
     font-size: 24.75px;
   }
-  /* line 106, ../sass/components/_typography.scss */
+  /* line 126, ../sass/components/_typography.scss */
   body.two-sidebars h3, body.two-sidebars h3 a, body.two-sidebars h2.block__title, body.two-sidebars h2.pane-title {
     font-size: 21.615px;
   }
-  /* line 110, ../sass/components/_typography.scss */
+  /* line 130, ../sass/components/_typography.scss */
   body.two-sidebars h4, body.two-sidebars h4 a {
     font-size: 16.5px;
   }
-  /* line 114, ../sass/components/_typography.scss */
+  /* line 134, ../sass/components/_typography.scss */
   body.two-sidebars h5, body.two-sidebars h5 a {
     font-size: 13.695px;
   }
-  /* line 118, ../sass/components/_typography.scss */
+  /* line 138, ../sass/components/_typography.scss */
   body.two-sidebars h6, body.two-sidebars h6 a {
     font-size: 11.055px;
   }
@@ -1714,19 +1736,20 @@ img.header__logo-image {
   display: table;
   clear: both;
   position: relative;
+  z-index: 1;
 }
 
-/* line 66, ../sass/components/_regions.scss */
+/* line 67, ../sass/components/_regions.scss */
 .preface {
   line-height: 0;
 }
-/* line 69, ../sass/components/_regions.scss */
+/* line 70, ../sass/components/_regions.scss */
 .preface img {
   height: auto;
   width: 100%;
 }
 
-/* line 77, ../sass/components/_regions.scss */
+/* line 78, ../sass/components/_regions.scss */
 #content {
   padding: 15px 0 0;
   background: transparent;
@@ -1734,17 +1757,17 @@ img.header__logo-image {
 }
 
 @media all and (min-width: 60em) {
-  /* line 84, ../sass/components/_regions.scss */
+  /* line 85, ../sass/components/_regions.scss */
   #content {
     padding: 30px 30px 30px 0;
   }
 }
-/* line 89, ../sass/components/_regions.scss */
+/* line 90, ../sass/components/_regions.scss */
 #content .messages {
   padding: 0 20px;
 }
 
-/* line 94, ../sass/components/_regions.scss */
+/* line 95, ../sass/components/_regions.scss */
 .breadcrumb li {
   display: inline-block;
   list-style: none;
@@ -1753,7 +1776,7 @@ img.header__logo-image {
   font-size: 14.5px;
 }
 
-/* line 103, ../sass/components/_regions.scss */
+/* line 104, ../sass/components/_regions.scss */
 h3.tech-support-button {
   background: #050483;
   -webkit-border-radius: 4px;
@@ -1765,7 +1788,7 @@ h3.tech-support-button {
   -moz-box-shadow: 2px 2px 4px #a2a2a2;
   box-shadow: 2px 2px 4px #a2a2a2;
 }
-/* line 107, ../sass/components/_regions.scss */
+/* line 108, ../sass/components/_regions.scss */
 h3.tech-support-button a {
   display: block;
   width: 100%;
@@ -1773,11 +1796,11 @@ h3.tech-support-button a {
   font-size: .75em;
   padding: .5rem 1rem;
 }
-/* line 113, ../sass/components/_regions.scss */
+/* line 114, ../sass/components/_regions.scss */
 h3.tech-support-button a:hover {
   color: white;
 }
-/* line 117, ../sass/components/_regions.scss */
+/* line 118, ../sass/components/_regions.scss */
 h3.tech-support-button:hover {
   background-color: #0806cd;
   -webkit-transition: all .3s;
@@ -1786,66 +1809,66 @@ h3.tech-support-button:hover {
   transition: all .3s;
 }
 
-/* line 125, ../sass/components/_regions.scss */
+/* line 126, ../sass/components/_regions.scss */
 .region-sidebar-first {
   padding-top: 15px;
 }
 
 @media all and (min-width: 60em) {
-  /* line 131, ../sass/components/_regions.scss */
+  /* line 132, ../sass/components/_regions.scss */
   .region-sidebar-first,
   .region-sidebar-second {
     padding: 30px;
   }
 
-  /* line 136, ../sass/components/_regions.scss */
+  /* line 137, ../sass/components/_regions.scss */
   .one-sidebar .region-sidebar-first,
   .region-sidebar-second {
     background-color: #eee6d6;
     border-left: 1px solid white;
   }
 
-  /* line 140, ../sass/components/_regions.scss */
+  /* line 141, ../sass/components/_regions.scss */
   #content {
     padding-bottom: 30px;
   }
 }
-/* line 150, ../sass/components/_regions.scss */
+/* line 151, ../sass/components/_regions.scss */
 footer {
   background: #3c3c3c;
   clear: both;
   overflow: hidden;
 }
-/* line 156, ../sass/components/_regions.scss */
+/* line 157, ../sass/components/_regions.scss */
 footer p,
 footer li,
 footer h4 {
   color: #cfe8ef;
 }
-/* line 159, ../sass/components/_regions.scss */
+/* line 160, ../sass/components/_regions.scss */
 footer p {
   font-size: 15px;
   margin-bottom: 0;
 }
 
-/* line 165, ../sass/components/_regions.scss */
+/* line 166, ../sass/components/_regions.scss */
 .region-footer {
   padding: 10px 0;
 }
 
-/* line 169, ../sass/components/_regions.scss */
+/* line 170, ../sass/components/_regions.scss */
 .copyright {
   clear: both;
   overflow: hidden;
   padding-bottom: 2rem;
 }
-/* line 173, ../sass/components/_regions.scss */
+/* line 174, ../sass/components/_regions.scss */
 .copyright p {
   float: left;
   font-size: 12.5px;
 }
 
-/* line 180, ../sass/components/_regions.scss */
+/* line 181, ../sass/components/_regions.scss */
 #block-block-3 {
   clear: both;
   margin-bottom: 2rem;
@@ -1853,19 +1876,19 @@ footer p {
 }
 
 @media all and (min-width: 40em) {
-  /* line 189, ../sass/components/_regions.scss */
+  /* line 190, ../sass/components/_regions.scss */
   .disclaimer-left,
   .disclaimer-right {
     float: left;
     width: 50%;
   }
 
-  /* line 194, ../sass/components/_regions.scss */
+  /* line 195, ../sass/components/_regions.scss */
   .disclaimer-left {
     padding-right: 17px;
   }
 
-  /* line 198, ../sass/components/_regions.scss */
+  /* line 199, ../sass/components/_regions.scss */
   .disclaimer-right {
     padding-left: 17px;
   }
@@ -1985,7 +2008,7 @@ header,
   }
 }
 @media all and (min-width: 60em) {
-  /* line 3, ../sass/components/_misc.scss */
+  /* line 7, ../sass/components/_misc.scss */
   body.one-sidebar, body.two-sidebars {
     background-image: url("../images/sidebar-bg.jpg");
     background-position: 960px 0;
@@ -1993,40 +2016,40 @@ header,
   }
 }
 @media all and (min-width: 1450px) {
-  /* line 11, ../sass/components/_misc.scss */
+  /* line 15, ../sass/components/_misc.scss */
   body.two-sidebars {
     background-position: 1120px;
   }
 }
 @media all and (min-width: 1600px) {
-  /* line 18, ../sass/components/_misc.scss */
+  /* line 22, ../sass/components/_misc.scss */
   body.one-sidebar {
     background-position: 1120px;
   }
 
-  /* line 22, ../sass/components/_misc.scss */
+  /* line 26, ../sass/components/_misc.scss */
   body.two-sidebars {
     background-position: 1275px;
   }
 }
 @media all and (min-width: 1980px) {
-  /* line 29, ../sass/components/_misc.scss */
+  /* line 33, ../sass/components/_misc.scss */
   body.one-sidebar {
     background-position: 1450px;
   }
 
-  /* line 33, ../sass/components/_misc.scss */
+  /* line 37, ../sass/components/_misc.scss */
   body.two-sidebars {
     background-position: 1450px;
   }
 }
 @media all and (min-width: 2415px) {
-  /* line 39, ../sass/components/_misc.scss */
+  /* line 43, ../sass/components/_misc.scss */
   body.two-sidebars {
     background-position: 1680px;
   }
 }
-/* line 47, ../sass/components/_misc.scss */
+/* line 51, ../sass/components/_misc.scss */
 ul.pager {
   background: none;
   border: none;
@@ -2037,30 +2060,30 @@ ul.pager {
   text-align: right;
 }
 
-/* line 57, ../sass/components/_misc.scss */
+/* line 61, ../sass/components/_misc.scss */
 ul.pager li {
   border: none;
   font-size: 15px;
   padding: .5em 0 .5em 1em;
 }
 
-/* line 63, ../sass/components/_misc.scss */
+/* line 67, ../sass/components/_misc.scss */
 ul.pager li a {
   border: none;
 }
 
-/* line 68, ../sass/components/_misc.scss */
+/* line 72, ../sass/components/_misc.scss */
 .pager li.pager-next,
 .pager li.pager-previous {
   text-transform: capitalize;
 }
 
-/* line 72, ../sass/components/_misc.scss */
+/* line 76, ../sass/components/_misc.scss */
 .pager li.pager-current {
   font-weight: normal;
 }
 
-/* line 76, ../sass/components/_misc.scss */
+/* line 80, ../sass/components/_misc.scss */
 .pager li, .pager li.pager-next, .pager li.pager-previous, .pager li.pager-last, .pager li.pager-first {
   border: none;
   margin-left: 1em;
@@ -2068,28 +2091,28 @@ ul.pager li a {
   text-align: right;
 }
 
-/* line 83, ../sass/components/_misc.scss */
+/* line 87, ../sass/components/_misc.scss */
 .pager li.pager-first a, .pager li.pager-previous a, .pager li.pager-next a, .pager li.pager-last a {
   display: inline-block;
 }
 
-/* line 88, ../sass/components/_misc.scss */
+/* line 92, ../sass/components/_misc.scss */
 .pager li.pager-next,
 .pager li.pager-current {
   float: right;
 }
 
-/* line 92, ../sass/components/_misc.scss */
+/* line 96, ../sass/components/_misc.scss */
 .pager li.pager-previous {
   float: left;
 }
 
-/* line 96, ../sass/components/_misc.scss */
+/* line 100, ../sass/components/_misc.scss */
 .item-list .pager li {
   padding: .25em 1em;
 }
 
-/* line 105, ../sass/components/_misc.scss */
+/* line 109, ../sass/components/_misc.scss */
 .img-right {
   float: right;
   height: auto;
@@ -2097,7 +2120,7 @@ ul.pager li a {
   max-width: 50%;
 }
 
-/* line 112, ../sass/components/_misc.scss */
+/* line 116, ../sass/components/_misc.scss */
 .img-left {
   float: left;
   height: auto;
@@ -2105,33 +2128,33 @@ ul.pager li a {
   max-width: 50%;
 }
 
-/* line 122, ../sass/components/_misc.scss */
+/* line 126, ../sass/components/_misc.scss */
 .messages.error {
   background: #f5dfdf;
   border: 2px solid #ce9e9e;
 }
-/* line 126, ../sass/components/_misc.scss */
+/* line 130, ../sass/components/_misc.scss */
 .messages.warning {
   background: #f8fad5;
   border: 2px solid #e5d35b;
 }
-/* line 130, ../sass/components/_misc.scss */
+/* line 134, ../sass/components/_misc.scss */
 .messages.info {
   background: #dfeff5;
   border: 2px solid #9ebcce;
 }
-/* line 134, ../sass/components/_misc.scss */
+/* line 138, ../sass/components/_misc.scss */
 .messages.success {
   background: #e8f5df;
   border: 2px solid #9ece9e;
 }
-/* line 138, ../sass/components/_misc.scss */
+/* line 142, ../sass/components/_misc.scss */
 .messages h2 {
   font-size: 1rem;
   font-weight: 300;
 }
 
-/* line 148, ../sass/components/_misc.scss */
+/* line 152, ../sass/components/_misc.scss */
 .messages.error,
 .messages.warning,
 .messages.info,
@@ -2140,7 +2163,7 @@ ul.pager li a {
   margin-bottom: 2rem;
   padding: 1rem;
 }
-/* line 152, ../sass/components/_misc.scss */
+/* line 156, ../sass/components/_misc.scss */
 .messages.error li,
 .messages.warning li,
 .messages.info li,
@@ -2148,7 +2171,7 @@ ul.pager li a {
   color: #222222;
 }
 
-/* line 158, ../sass/components/_misc.scss */
+/* line 162, ../sass/components/_misc.scss */
 .element-invisible {
   position: absolute !important;
   height: 1px;

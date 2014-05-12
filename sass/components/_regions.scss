@@ -61,6 +61,7 @@ img.header__logo-image {
   @include box-shadow(0 0 7px lighten($black, 50%));
   @include clear-it;
   position: relative;
+  z-index: 1;
 }
 
 .preface {
