@@ -185,9 +185,12 @@ input[type="tel"]:focus {
 // search form
 
 .block-search input[type="search"] {
-  background-image: url(../images/search.png);
+  background-image: url(../images/search-icon.png);
   background-repeat: no-repeat;
-  background-position: 95% 7px;
+  background-position: 92% 5px;
+  padding: 5px;
+  @include box-sizing(border-box);
+  @include background-size(20px 23px);
   color: $black;
   font: inherit;
   -webkit-appearance: none;

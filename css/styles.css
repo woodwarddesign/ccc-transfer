@@ -908,7 +908,7 @@ nav {
     float: right;
     position: absolute;
     right: 0;
-    top: 1rem;
+    top: 1.5rem;
     width: 30%;
   }
 }
@@ -1145,9 +1145,17 @@ input[type="tel"]:focus {
 
 /* line 187, ../sass/components/_forms.scss */
 .block-search input[type="search"] {
-  background-image: url(../images/search.png);
+  background-image: url(../images/search-icon.png);
   background-repeat: no-repeat;
-  background-position: 95% 7px;
+  background-position: 92% 5px;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-background-size: 20px 23px;
+  -moz-background-size: 20px 23px;
+  -o-background-size: 20px 23px;
+  background-size: 20px 23px;
   color: #222222;
   font: inherit;
   -webkit-appearance: none;
@@ -1159,12 +1167,12 @@ input[type="tel"]:focus {
   border-radius: 30px;
 }
 
-/* line 198, ../sass/components/_forms.scss */
+/* line 201, ../sass/components/_forms.scss */
 .form-type-searchfield {
   padding-right: 5px;
 }
 
-/* line 202, ../sass/components/_forms.scss */
+/* line 205, ../sass/components/_forms.scss */
 .block-search .form-actions {
   display: none;
 }
