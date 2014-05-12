@@ -60,6 +60,18 @@
       min-height: 15em;
       overflow: hidden;
       padding: 1em 0em 0 0em;
+      &:before {
+	      content: " ";
+	      display: block;
+	      height: 2px;
+	      width: 100%;
+	      position: relative;
+	      top: -15px;
+	      left: 0;
+	    	background-image: url('../images/lh-line.png');
+				background-repeat: repeat-x;
+				background-position: top left;
+      }
     }
     .views-row {
       overflow: hidden;
@@ -124,9 +136,18 @@
 
 @media all and (min-width: $tab) {
 
-  .view-school-search .views-column {
-    padding: 0 1em 1em 0;
-    width: 50%;
+  .view-school-search {
+  	.views-column { 
+//	    padding: 0 1em 1em 0;
+	    width: 50%;
+	  }
+	  .col-1 {
+	  	padding-right: 1em;
+	  }
+	  
+	  .col-2 {
+		  padding-right: 0;
+		  padding-left: 1em;
+	  }
   }
-
 }

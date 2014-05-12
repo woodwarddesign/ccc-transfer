@@ -719,17 +719,30 @@ nav {
   overflow: hidden;
   padding: 1em 0em 0 0em;
 }
-/* line 64, ../sass/components/_views.scss */
+/* line 63, ../sass/components/_views.scss */
+.view-school-search .view-data:before {
+  content: " ";
+  display: block;
+  height: 2px;
+  width: 100%;
+  position: relative;
+  top: -15px;
+  left: 0;
+  background-image: url("../images/lh-line.png");
+  background-repeat: repeat-x;
+  background-position: top left;
+}
+/* line 76, ../sass/components/_views.scss */
 .view-school-search .views-row {
   overflow: hidden;
 }
-/* line 67, ../sass/components/_views.scss */
+/* line 79, ../sass/components/_views.scss */
 .view-school-search .views-column {
   float: left;
   padding: 0 0em 1em 0;
   width: 100%;
 }
-/* line 72, ../sass/components/_views.scss */
+/* line 84, ../sass/components/_views.scss */
 .view-school-search h3 {
   border: 1px solid #cccccc;
   height: 4.5em;
@@ -757,7 +770,7 @@ nav {
   -o-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 96, ../sass/components/_views.scss */
+/* line 108, ../sass/components/_views.scss */
 .view-school-search .filter-buttons .filter {
   background: none;
   border-bottom: 1px solid #cccccc;
@@ -769,35 +782,43 @@ nav {
   -o-transition: all .3s;
   transition: all .3s;
 }
-/* line 103, ../sass/components/_views.scss */
+/* line 115, ../sass/components/_views.scss */
 .view-school-search .filter-buttons .filter:hover {
   background: #cccccc;
 }
-/* line 108, ../sass/components/_views.scss */
+/* line 120, ../sass/components/_views.scss */
 .view-school-search .filter.active {
   background: #050483;
   color: white;
 }
-/* line 111, ../sass/components/_views.scss */
+/* line 123, ../sass/components/_views.scss */
 .view-school-search .filter.active:hover {
   background: #050483;
 }
-/* line 115, ../sass/components/_views.scss */
+/* line 127, ../sass/components/_views.scss */
 .view-school-search .view-item {
   background: white;
 }
 
-/* line 121, ../sass/components/_views.scss */
+/* line 133, ../sass/components/_views.scss */
 .js .mix,
 .mix.no-result {
   display: none;
 }
 
 @media all and (min-width: 40em) {
-  /* line 127, ../sass/components/_views.scss */
+  /* line 140, ../sass/components/_views.scss */
   .view-school-search .views-column {
-    padding: 0 1em 1em 0;
     width: 50%;
+  }
+  /* line 144, ../sass/components/_views.scss */
+  .view-school-search .col-1 {
+    padding-right: 1em;
+  }
+  /* line 148, ../sass/components/_views.scss */
+  .view-school-search .col-2 {
+    padding-right: 0;
+    padding-left: 1em;
   }
 }
 /* line 3, ../sass/components/_blocks.scss */
@@ -1257,7 +1278,7 @@ h6, h6 a {
 /* line 67, ../sass/components/_typography.scss */
 h1#page-title,
 .region-sidebar-second h2,
-.region-sidebar-first h2 {
+one.sidebar .region-sidebar-first h2 {
   background-image: url("../images/shortcut-dark.png");
   background-repeat: no-repeat;
   background-position: right center;
@@ -1268,7 +1289,7 @@ h1#page-title,
 /* line 73, ../sass/components/_typography.scss */
 h1#page-title:before,
 .region-sidebar-second h2:before,
-.region-sidebar-first h2:before {
+one.sidebar .region-sidebar-first h2:before {
   content: " ";
   display: block;
   position: relative;
