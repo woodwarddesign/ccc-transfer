@@ -66,6 +66,10 @@ h1#page-title,
 .region-sidebar-second h2,
 .region-sidebar-first h2 {
 	
+	background-image: url('../images/shortcut-dark.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+	
 	&:before {
 		content: " ";
 		display: block;

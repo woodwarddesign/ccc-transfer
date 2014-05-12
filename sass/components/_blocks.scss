@@ -18,6 +18,22 @@
   }
 }
 
+#block-block-5 h2 {
+	margin-bottom: 15px;
+	background-image: url('../images/email-icon.png');
+	&:after {
+		content: " ";
+		display: block;
+		position: relative;
+		top: 5px;
+		height: 2px;
+		width: 100%;
+		background-image: url('../images/lh-line.png');
+		background-repeat: repeat-x;
+		background-position: top left;
+	}
+}
+
 @media all and (min-width: $tab) {
 
   .block-search {

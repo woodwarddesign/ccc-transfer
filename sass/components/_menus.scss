@@ -22,6 +22,8 @@ li a.active:hover  {
 .menu-wrapper {
   background: $dark-gray;
 	height: 2.75em;
+	position: relative;
+	z-index: 5;
   ul {
     line-height: 1;
   }
@@ -54,7 +56,7 @@ li a.active:hover  {
 
 a.menu-link {
   background: url('../images/menu-icon.svg') no-repeat scroll 20px .9em transparent;
-  color: $white;
+  color: $light-blue;
   display: block;
   float: left;
   padding: .475em 0 0 45px;
@@ -82,6 +84,7 @@ a.menu-link {
 .region-menu .menu li.menuparent > a.active:after {
   content: "-";
   top: -13px;
+  right: 2px;
 }
 
 .region-menu .menu li {
