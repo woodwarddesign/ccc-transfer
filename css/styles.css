@@ -864,11 +864,32 @@ nav {
   background-position: top left;
 }
 
-/* line 38, ../sass/components/_blocks.scss */
+/* line 37, ../sass/components/_blocks.scss */
+#block-block-7 h3 {
+  margin-bottom: 15px;
+}
+/* line 41, ../sass/components/_blocks.scss */
+#block-block-7 h3:before, #block-block-7 h3:after {
+  content: " ";
+  display: block;
+  position: relative;
+  top: 4px;
+  height: 2px;
+  width: 100%;
+  background-image: url("../images/lh-line.png");
+  background-repeat: repeat-x;
+  background-position: top left;
+}
+/* line 53, ../sass/components/_blocks.scss */
+#block-block-7 h3:before {
+  top: -2px;
+}
+
+/* line 59, ../sass/components/_blocks.scss */
 #block-block-3 h4 {
   padding-top: 5px;
 }
-/* line 41, ../sass/components/_blocks.scss */
+/* line 62, ../sass/components/_blocks.scss */
 #block-block-3 h4:before, #block-block-3 h4:after {
   content: " ";
   display: block;
@@ -880,19 +901,19 @@ nav {
   background-repeat: repeat-x;
   background-position: top left;
 }
-/* line 52, ../sass/components/_blocks.scss */
+/* line 73, ../sass/components/_blocks.scss */
 #block-block-3 h4:after {
   top: 5px;
 }
 
-/* line 58, ../sass/components/_blocks.scss */
+/* line 79, ../sass/components/_blocks.scss */
 .copyright {
   background-image: url("../images/dh-line.png");
   background-repeat: repeat-x;
   background-position: top left;
   padding-top: .5em;
 }
-/* line 64, ../sass/components/_blocks.scss */
+/* line 85, ../sass/components/_blocks.scss */
 .copyright:before {
   content: " ";
   display: block;
@@ -903,7 +924,7 @@ nav {
 }
 
 @media all and (min-width: 40em) {
-  /* line 77, ../sass/components/_blocks.scss */
+  /* line 98, ../sass/components/_blocks.scss */
   .block-search {
     float: right;
     position: absolute;
@@ -913,7 +934,7 @@ nav {
   }
 }
 @media all and (min-width: 60em) {
-  /* line 89, ../sass/components/_blocks.scss */
+  /* line 110, ../sass/components/_blocks.scss */
   .block-search {
     padding: 0;
     width: 20%;
