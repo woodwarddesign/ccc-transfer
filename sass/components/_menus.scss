@@ -72,7 +72,7 @@ a.menu-link {
 .region-menu .menu li.menuparent > a:after {
 	content: '+';
 	position: absolute;
-	top: -15px;
+	top: -10px;
 	right: 0;
 	display: block;
 	font-size: 1.5em;
@@ -81,6 +81,7 @@ a.menu-link {
 
 .region-menu .menu li.menuparent > a.active:after {
   content: "-";
+  top: -13px;
 }
 
 .region-menu .menu li {
@@ -133,7 +134,10 @@ footer .region-footer p a:active {
   @include trans-all;
   li {
     padding: .75rem .75rem .75rem 2rem;
-    border-bottom: 1px solid lighten($black, 60%);
+//    border-bottom: 1px solid lighten($black, 60%);
+		background-image: url('../images/dh-line.png');
+		background-repeat: repeat-x;
+		background-position: top left;
     list-style: none;
     width: 200%;
     &:last-child {
@@ -143,7 +147,7 @@ footer .region-footer p a:active {
 }
 
 .region-menu .menu li ul {
-  background: lighten($black, 30%);
+  background: lighten($black, 20%);
   margin: .5em -20px -1em -100px;
   padding-left: 80px;
   padding-right: 150px;

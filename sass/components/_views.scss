@@ -4,6 +4,20 @@
   padding: 20px 30px;
 }
 
+.view {
+	.odd,
+	.even {
+		background-image: url('../images/lh-line.png');
+		background-repeat: repeat-x;
+		background-position: top left;
+		padding-top: 1em;
+	}
+	
+	p {
+		margin-bottom: 1em;
+	}
+}
+
 .view .row {
   border-bottom: 1px solid lighten($base-color, 15%);
   margin-bottom:  $vert-spacing * 2;
