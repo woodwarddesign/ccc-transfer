@@ -38,13 +38,36 @@ header,
   position: relative;
 }
 
+.front .preface {
+  max-width: 100%;
+  min-height: 410px;
+
+  .preface-text {
+	  background-color: $off-white;
+	  height: auto;
+	  p {
+		  margin-bottom: 20px;
+	  }
+  }
+}
+
 
 @media all and (min-width: $desk) {
+	
+	header {
+		max-width: 95%;
+	}
 
   .region-menu{
     padding: 0 ($gutter / 2);
   }
-
+  
+	.preface {
+		.preface-text {
+			min-height: 65px;
+			
+		}
+	}
   // #main {
   //   overflow: hidden;
   // }

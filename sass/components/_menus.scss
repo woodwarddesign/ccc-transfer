@@ -100,12 +100,13 @@ a.menu-link {
 }
 
 .region-menu .menu li a,
-.footer-menu.menu li a {
+.footer-menu.menu li a,
+a.menu-link {
   color: $light-blue;
   font-family: $header-font-family;
   font-weight: 100;
   &.toggled {
-//    color: $white;
+   color: $white;
   }
 }
 
@@ -296,7 +297,7 @@ footer .region-footer p a:toggled {
       display: inline-block;
       margin-left: -5.25em;
       overflow: hidden;
-      padding-left: 1.25em;
+      padding-left: .75em;
       position: relative;
       width: 15.2em;
       a {

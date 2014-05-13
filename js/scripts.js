@@ -12,22 +12,42 @@ $(document).ready(function() {
   //set up variable for mobile. set this to keep track of width so functions are run only on transition from
   // moble to desktop and vice versa. if this isn't done, functions will fire constantly as window is resized
   var mobile = 0;
+  // keeps track if function has been run
+  var functionStatus = 0;
 
-  // determine if width is 'mobile'
   function setMobileValue() {
     var viewport = $(window).width();
-    if (viewport < 970 && mobile === 0 ) {
+    if (viewport < 970) {
       mobile = 1;
-      addMobileMenuItem();
-      toggleMenu();
     }
-    else if (viewport > 970 && mobile === 1 ) {
-      removeMobileMenuItem();
+    else {
       mobile = 0;
     }
   }
 
   setMobileValue();
+
+  // determine if width is 'mobile' and if function has already been run
+  function fireMobileFunctions() {
+    if (mobile === 1 && functionStatus == 0) {
+      // turn this 'on' so that it doesn't run multiple times during resize
+      functionStatus = 1;
+      addMobileMenuItem();
+      toggleMenu();
+    }
+    else if (mobile === 0 && functionStatus == 1)  {
+      //turn 'off' so that it will run again if resized to mobile
+      functionStatus = 0;
+      removeMobileMenuItem();
+      // unbind click events from toglleMenu function
+      $('.menu-link').unbind();
+      $('.menuparent > a').unbind();
+      //remove toggled class
+      $('a').removeClass('toggled');
+    }
+  }
+
+  fireMobileFunctions();
 
   $('body').addClass('js');
 
@@ -36,11 +56,12 @@ $(document).ready(function() {
   // the toggle menu doesn't allow the first element to act as a link - it's instead a toggle.
   // the bit below copies the parent link and adds it to the child ul so that the page is accessible
   function addMobileMenuItem() {
-      $links = $('li.menuparent').children('a:first-child');
-      if ($links.length > 0){
-        $links.each(function(i,link) {$(link).next().prepend($('<li></li>').append($(link).clone()))
-        })
-      }
+    $links = $('li.menuparent').children('a:first-child');
+    if ($links.length > 0){
+      $links.each(function(i,link) {
+        $(link).next().prepend($('<li></li>').append($(link).clone()))
+      })
+    }
   }
 
   //remove any items that have been added on resize when going back to desktop width
@@ -75,7 +96,7 @@ $(document).ready(function() {
    }
  }
 
-window.setTimeout(equalHeight, 50);
+  window.setTimeout(equalHeight, 50);
 
   function toggleMenu() {
       // add the toggle classes
@@ -99,6 +120,7 @@ window.setTimeout(equalHeight, 50);
     $(window).resize(function() {
       setMobileValue();
       equalHeight();
+      fireMobileFunctions();
     });
 
 		});

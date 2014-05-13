@@ -108,13 +108,17 @@ img.header__logo-image {
 }
 
 h3.tech-support-button {
-  background: $accent;
+  background-color: $accent;
+  background-image: url('../images/shortcut-light.png');
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
  	@include border-radius(4px);
  	@include box-shadow (2px 2px 4px lighten($black, 50%));
+ 	margin-bottom: 1em;
   a {
   	display: block;
     width: 100%;
-    color: $light-blue;
+    color: $white;
     font-size: .75em;
 		padding: .5rem 1rem;
     &:hover {

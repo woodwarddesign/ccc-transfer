@@ -25,7 +25,9 @@
 		content: " ";
 		display: block;
 		position: relative;
+		z-index: 1;
 		top: 5px;
+		left: 0;
 		height: 2px;
 		width: 100%;
 		background-image: url('../images/lh-line.png');
@@ -99,7 +101,7 @@
     float: right;
     position: absolute;
     right: 0;
-    top: 1.5rem;
+    bottom: -1rem;
     width: 30%;
   }
 
@@ -110,6 +112,8 @@
     .block-search {
       padding: 0;
       width: 20%;
+    bottom: .5rem;
+
     }
 
 }

@@ -87,6 +87,11 @@ one.sidebar .region-sidebar-first h2 {
 		padding: .25em 0;
 }
 
+.region-sidebar-second h2,
+one.sidebar .region-sidebar-first h2 {
+	background-position: 95% center;
+}
+
 @media all and (min-width: $tab) {
 
   body {
