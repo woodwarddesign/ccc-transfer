@@ -45,7 +45,7 @@ input[type="tel"] {
   @include border-radius(4px);
   @include box-shadow(inset 0 0 7px #aaaaaa);
   &:hover {
-	  color: $accent!important;
+	  color: $accent !important;
   }
 }
 
@@ -60,12 +60,12 @@ input[type="tel"] {
 	input[type="tel"] {
 		border-color: $light-beige;
 		padding: 10px;
-		
+
 		@include input-placeholder {
 			font-style: italic;
 			font-weight: 100;
 			font-size: .8em;
-			font-family: $sans;
+			font-family: $sans-body;
 		}
 	}
 }

@@ -49,13 +49,13 @@
 		background-repeat: repeat-x;
 		background-position: top left;
 	}
-	
+
 	&:before {
 		top: -2px;
 	}
 }
 
-#block-block-3 {
+#block-block-5 {
 	h4 {
 		padding-top: 5px;
 		&:before,
@@ -68,7 +68,7 @@
 			width: 100%;
 			background-image: url('../images/dh-line.png');
 			background-repeat: repeat-x;
-			background-position: top left;			
+			background-position: top left;
 		}
 		&:after {
 			top: 5px;
@@ -80,7 +80,7 @@
 
 			background-image: url('../images/dh-line.png');
 			background-repeat: repeat-x;
-			background-position: top left;	
+			background-position: top left;
 			padding-top: .5em;
 		&:before {
 			content: " ";
@@ -89,8 +89,8 @@
 			top: -5px;
 			height: 2px;
 			width: 100%;
-		
-		}	
+
+		}
 }
 
 @media all and (min-width: $tab) {
