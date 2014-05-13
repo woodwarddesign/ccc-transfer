@@ -1,65 +1,5 @@
 // misc styles
 
-
-// Sidebar Color Extension
-// @media all and (min-width: $desk) {
-// 	body.one-sidebar, body.two-sidebars {
-// 		background-image: url('../images/sidebar-bg.jpg');
-// 		background-position: 960px 0;
-// 		background-repeat: repeat-y;
-// 	}
-// }
-//
-// @media all and (min-width: $big-desk) {
-// 	body.two-sidebars {
-// 		background-position: 1120px;
-// 	}
-// }
-//
-// @media all and (min-width: $really-big-desk) {
-//
-// 	body.one-sidebar {
-// 		background-position: 1120px;
-// 	}
-//
-// 	body.two-sidebars {
-// 		background-position: 1275px;
-// 	}
-// }
-//
-// @media all and (min-width: $super-big-desk) {
-//
-// 	body.one-sidebar {
-// 		background-position: 1450px;
-// 	}
-//
-// 	body.two-sidebars {
-// 		background-position: 1450px;
-// 	}
-// }
-//
-// @media all and (min-width: $monster-desk) {
-// 	body.two-sidebars {
-// 		background-position: 1680px;
-// 	}
-// }
-
-// #content:after {
-// 	bottom: 0;
-//   content: "";
-//   position: absolute;
-// 	top: 0;
-//   width: 9999px;
-// }
-//
-// #content:after {
-//   background-color: yellow;
-//   left: 100%;
-// }
-
-
-// Sponsor
-
 #sponsor {
 	padding: 15px 5px 5px;
 	display: block;
@@ -70,7 +10,7 @@
 	text-align: right;
 	margin: 0 auto;
 	color: $black;
-	
+
 	span {
 		@include box-shadow (lighten($dark-gold, 15%) 0 0 0 3px,lighten($dark-gold, 50%) 0 1px 0 3px,darken($dark-gold, 10%) 0 -1px 0 3px);
 		background-color: lighten($dark-gold, 15%);
@@ -82,7 +22,7 @@
 		float: right;
 		display: block;
 		@include border-radius(30px);
-		margin:0 0 .5em 1.25em;			
+		margin:0 0 .5em 1.25em;
 	}
 }
 
@@ -112,23 +52,23 @@
 	text-align: center;
 	padding: 0 15px 0;
 
-	 
+
 	p {
 		padding-top: 20px;
 		font-family: $serif;
 	}
-} 
+}
 
 @media all and (min-width: $tab) {
 	.front .preface {
-  	background-image: url('../images/top-image-tablet.jpg');		
+  	background-image: url('../images/top-image-tablet.jpg');
 	}
 }
 
 @media all and (min-width: $desk) {
 	.front .preface {
 		min-height: 390px;
-  	background-image: url('../images/top-image-large.jpg');		
+  	background-image: url('../images/top-image-large.jpg');
 	}
 }
 
@@ -248,4 +188,8 @@ ul.pager li a {
 // accessible invisibility
 .element-invisible {
   @include element-invisible;
+}
+
+.clearfix:after {
+  @include clear-it;
 }
