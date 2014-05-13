@@ -99,7 +99,7 @@
     float: right;
     position: absolute;
     right: 0;
-    top: 1.5rem;
+    bottom: -1rem;
     width: 30%;
   }
 
@@ -110,6 +110,8 @@
     .block-search {
       padding: 0;
       width: 20%;
+    bottom: .5rem;
+
     }
 
 }

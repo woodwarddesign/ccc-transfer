@@ -935,7 +935,7 @@ nav {
     float: right;
     position: absolute;
     right: 0;
-    top: 1.5rem;
+    bottom: -1rem;
     width: 30%;
   }
 }
@@ -944,6 +944,7 @@ nav {
   .block-search {
     padding: 0;
     width: 20%;
+    bottom: .5rem;
   }
 }
 /* FORM STYLES */
@@ -2292,7 +2293,7 @@ header,
   /* line 91, ../sass/components/_misc.scss */
   #sponsor {
     max-width: 100%;
-    margin: 0;
+    margin: 0 0 -5%;
   }
 }
 /* line 103, ../sass/components/_misc.scss */
