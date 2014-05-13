@@ -1,9 +1,5 @@
 // views styles
 
-.not-front .view {
-  padding: 20px 30px;
-}
-
 .view {
 	.odd,
 	.even,
@@ -16,7 +12,7 @@
 	.item-list {
 		padding-top: .25em;
 	}
-	
+
 	p {
 		margin-bottom: 1em;
 	}
@@ -24,8 +20,6 @@
 
 .view .row {
   border-bottom: 1px solid lighten($base-color, 15%);
-  margin-bottom:  $vert-spacing * 2;
-  padding-bottom:  $vert-spacing * 2;
 }
 
 .view .row.last {
@@ -137,14 +131,14 @@
 @media all and (min-width: $tab) {
 
   .view-school-search {
-  	.views-column { 
+  	.views-column {
 //	    padding: 0 1em 1em 0;
 	    width: 50%;
 	  }
 	  .col-1 {
 	  	padding-right: 1em;
 	  }
-	  
+
 	  .col-2 {
 		  padding-right: 0;
 		  padding-left: 1em;
