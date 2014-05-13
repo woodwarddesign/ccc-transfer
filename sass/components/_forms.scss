@@ -42,8 +42,15 @@ input[type="tel"] {
   outline: none;
   position: relative;
   width: 100%;
+	padding: 10px;
   @include border-radius(4px);
   @include box-shadow(inset 0 0 7px #aaaaaa);
+	@include input-placeholder {
+		font-style: italic;
+		font-weight: 100;
+		font-size: .8em;
+		font-family: $sans;
+	}
   &:hover {
 	  color: $accent!important;
   }
@@ -59,14 +66,7 @@ input[type="tel"] {
 	input[type="search"],
 	input[type="tel"] {
 		border-color: $light-beige;
-		padding: 10px;
-		
-		@include input-placeholder {
-			font-style: italic;
-			font-weight: 100;
-			font-size: .8em;
-			font-family: $sans;
-		}
+	
 	}
 }
 
