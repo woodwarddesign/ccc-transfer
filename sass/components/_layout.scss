@@ -33,21 +33,44 @@ header,
   margin-bottom: $vert-spacing * 1.5;
 }
 
-@media all and (min-width: $tab) {
+.region-sidebar-first,
+.region-sidebar-second {
+  position: relative;
+}
 
+.front .preface {
+  max-width: 100%;
+  min-height: 410px;
 
+  .preface-text {
+	  background-color: $off-white;
+	  height: auto;
+	  p {
+		  margin-bottom: 20px;
+	  }
+  }
 }
 
 
 @media all and (min-width: $desk) {
+	
+	header {
+		max-width: 95%;
+	}
 
   .region-menu{
     padding: 0 ($gutter / 2);
   }
-
-  #main {
-    overflow: hidden;
-  }
+  
+	.preface {
+		.preface-text {
+			min-height: 65px;
+			
+		}
+	}
+  // #main {
+  //   overflow: hidden;
+  // }
 
   .two-sidebars {
     #content {
@@ -68,8 +91,16 @@ header,
     .region-sidebar-second {
       float: left;
       width: 25%;
-      padding-bottom: 10000px;
-      margin-bottom: -10000px;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        left: 100%;
+        background-color: $beige;
+        width: 9999px;
+      }
     }
 	}
 
@@ -78,7 +109,7 @@ header,
 	}
 
 // one sidebar, sidebar first
-.one-sidebar.sidebar-first.push-right {
+.one-sidebar.sidebar-first {
   #content {
     clear: none;
     float: left;
@@ -89,9 +120,17 @@ header,
   .region-sidebar-first {
     float: left;
     margin-left: 67%;
-    padding-bottom: 10000px;
-    margin-bottom: -10000px;
     width: 33%;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+      left: 100%;
+      background-color: $beige;
+      width: 9999px;
+    }
   }
 }
 
@@ -109,6 +148,16 @@ header,
     clear: none;
     float: left;
     width: 33%;
+    :after {
+      bottom: 0;
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 9999px;
+      left: 100%;
+      background: $beige;
+      z-index: -1;
+    }
   }
 }
 

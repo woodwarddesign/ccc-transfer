@@ -43,23 +43,29 @@ $(document).ready(function() {
   }
 
   // equal height columns
- //  function equalHeight(group) {
- //      if (mobile ===0) {
- //     tallest = 0;
- //     group.each(function() {
- //        thisHeight = $(this).height();
- //        if(thisHeight > tallest) {
- //           tallest = thisHeight;
- //        }
- //     });
- //     group.height(tallest);
- //   }
- //   else {
- //     $(".column").css('height', 'auto');
- //   }
- // }
+  function equalHeight() {
+      if (mobile ===0) {
+     tallest = 0;
+     target = $('.column');
+     target.each(function() {
+        thisHeight = target.outerHeight();
+        if(thisHeight > tallest) {
+           tallest = thisHeight;
+           if (tallest < $('.view-school-search .view-data').height()) {
+             tallest = $('.view-school-search .view-data').height() + 50;
+           }
+        }
+     });
+     target.height(tallest);
+   }
+   else {
+     target.css('height', 'auto');
+   }
+ }
 
-// equalHeight($(".column"));
+window.setTimeout(equalHeight, 50);
+
+function yourfunction() { alert('test'); }
 
   function toggleMenu() {
       // add the toggle classes
@@ -84,5 +90,6 @@ $(document).ready(function() {
       setMobileValue();
       //equalHeight($(".column"));
     });
+
 
 		});

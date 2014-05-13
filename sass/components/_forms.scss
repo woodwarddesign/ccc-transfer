@@ -42,8 +42,18 @@ input[type="tel"] {
   outline: none;
   position: relative;
   width: 100%;
+	padding: 10px;
   @include border-radius(4px);
   @include box-shadow(inset 0 0 7px #aaaaaa);
+	@include input-placeholder {
+		font-style: italic;
+		font-weight: 100;
+		font-size: .8em;
+		font-family: $sans;
+	}
+  &:hover {
+	  color: $accent!important;
+  }
 }
 
 @media all and (min-width: $desk) {
@@ -56,6 +66,7 @@ input[type="tel"] {
 	input[type="search"],
 	input[type="tel"] {
 		border-color: $light-beige;
+	
 	}
 }
 
@@ -82,6 +93,9 @@ input[type="button"],
   padding: 8px 16px; padding: .5rem 1rem;
   text-shadow: none;
   @include trans-all;
+   &:hover {
+		background: $accent;
+  }
 }
 
 button:hover,
@@ -179,9 +193,12 @@ input[type="tel"]:focus {
 // search form
 
 .block-search input[type="search"] {
-  background-image: url(../images/search.png);
+  background-image: url(../images/search-icon.png);
   background-repeat: no-repeat;
-  background-position: 95% 7px;
+  background-position: 92% 5px;
+  padding: 5px;
+  @include box-sizing(border-box);
+  @include background-size(20px 23px);
   color: $black;
   font: inherit;
   -webkit-appearance: none;
