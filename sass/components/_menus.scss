@@ -11,13 +11,13 @@ ul li.leaf {
   width: 100%;
 }
 
-li a.active {
-  color: $accent;
-}
-
-li a.active:hover  {
-  color: lighten($accent, 15%);
-}
+// li a.active {
+//   color: $accent;
+// }
+//
+// li a.active:hover  {
+//   color: lighten($accent, 15%);
+// }
 
 .menu-wrapper {
   background: $dark-gray;
@@ -32,7 +32,7 @@ li a.active:hover  {
 }
 
 .region-menu .menu,
-.footer-menu.menu {
+.footer-menu .menu {
   background: $dark-gray;
 	float: left;
   list-style: none;
@@ -250,14 +250,14 @@ footer .region-footer p a:active {
       border-right: none;
     }
   }
-  
+
   .region-menu .menu li li,
   .footer-menu.menu li li,
   .region-menu .menu li.last,
   .footer-menu.menu li.last   {
 	  background-image: none;
   }
-  
+
 
   .region-menu .menu li,
   .footer-menu.menu li {

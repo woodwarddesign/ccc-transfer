@@ -6,11 +6,17 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   color: $text-color;
   font-size: $base-font-size * .925;
   font-family: $sans-body;
   background-color: $light-beige;
+
 }
 
 a,
