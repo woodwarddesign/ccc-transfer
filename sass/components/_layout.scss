@@ -40,6 +40,10 @@ header,
 
 
 @media all and (min-width: $desk) {
+	
+	header {
+		max-width: 95%;
+	}
 
   .region-menu{
     padding: 0 ($gutter / 2);
