@@ -1,49 +1,61 @@
 // misc styles
 
 
-
 // Sidebar Color Extension
-@media all and (min-width: $desk) { 
-	body.one-sidebar, body.two-sidebars {
-		background-image: url('../images/sidebar-bg.jpg');
-		background-position: 960px 0;
-		background-repeat: repeat-y;
-	}
-}
+// @media all and (min-width: $desk) {
+// 	body.one-sidebar, body.two-sidebars {
+// 		background-image: url('../images/sidebar-bg.jpg');
+// 		background-position: 960px 0;
+// 		background-repeat: repeat-y;
+// 	}
+// }
+//
+// @media all and (min-width: $big-desk) {
+// 	body.two-sidebars {
+// 		background-position: 1120px;
+// 	}
+// }
+//
+// @media all and (min-width: $really-big-desk) {
+//
+// 	body.one-sidebar {
+// 		background-position: 1120px;
+// 	}
+//
+// 	body.two-sidebars {
+// 		background-position: 1275px;
+// 	}
+// }
+//
+// @media all and (min-width: $super-big-desk) {
+//
+// 	body.one-sidebar {
+// 		background-position: 1450px;
+// 	}
+//
+// 	body.two-sidebars {
+// 		background-position: 1450px;
+// 	}
+// }
+//
+// @media all and (min-width: $monster-desk) {
+// 	body.two-sidebars {
+// 		background-position: 1680px;
+// 	}
+// }
 
-@media all and (min-width: 1450px) {
-	body.two-sidebars {
-		background-position: 1120px;
-	}
-}
-
-@media all and (min-width: 1600px) {
-	
-	body.one-sidebar {
-		background-position: 1120px;
-	}
-	
-	body.two-sidebars {
-		background-position: 1275px;
-	}
-}
-
-@media all and (min-width: 1980px) {
-	
-	body.one-sidebar {
-		background-position: 1450px;
-	}
-	
-	body.two-sidebars {
-		background-position: 1450px;
-	}
-}
-
-@media all and (min-width: 2415px) {
-	body.two-sidebars {
-		background-position: 1680px;
-	}
-}
+// #content:after {
+// 	bottom: 0;
+//   content: "";
+//   position: absolute;
+// 	top: 0;
+//   width: 9999px;
+// }
+//
+// #content:after {
+//   background-color: yellow;
+//   left: 100%;
+// }
 
 
 // pager styles
