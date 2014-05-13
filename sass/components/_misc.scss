@@ -58,6 +58,46 @@
 // }
 
 
+// Sponsor
+
+#sponsor {
+//	background-color: rgba(0,0,0,0.5);
+	padding: 15px 5px 5px;
+	display: block;
+	overflow: hidden;
+	max-width: 12em;
+	font-size: .85em;
+	line-height: 3em;
+	text-align: right;
+	margin: 0 auto;
+	color: $black;
+	
+	span {
+		@include box-shadow(lighten($dark-gold, 15%) 0 0 0 3px,lighten($dark-gold, 50%) 0 1px 0 3px,darken($dark-gold, 10%) 0 -1px 0 3px);
+		background-color: lighten($dark-gold, 15%);
+		background-image: url('../images/ccc.svg');
+		background-repeat: no-repeat;
+		background-position: 95% 45%;
+		height: 3em;
+		width: 3em;
+		float: right;
+		display: block;
+		@include border-radius(30px);
+		margin:0 0 .5em 1.25em;			
+	}
+}
+
+@media all and (min-width: $tab) {
+	#sponsor {
+		max-width: 100%;
+		margin: 0;
+		span {
+		
+		}
+	}
+}
+
+
 // pager styles
 
 ul.pager {
