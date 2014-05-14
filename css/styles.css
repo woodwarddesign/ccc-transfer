@@ -679,17 +679,7 @@ nav {
   margin-bottom: 1em;
 }
 
-/* line 21, ../sass/components/_views.scss */
-.view .row {
-  border-bottom: 1px solid white;
-}
-
-/* line 25, ../sass/components/_views.scss */
-.view .row.last {
-  border-bottom: none;
-}
-
-/* line 32, ../sass/components/_views.scss */
+/* line 24, ../sass/components/_views.scss */
 .scrollable {
   border: 1px solid white;
   background-color: white;
@@ -699,26 +689,26 @@ nav {
   overflow: scroll;
 }
 
-/* line 41, ../sass/components/_views.scss */
+/* line 33, ../sass/components/_views.scss */
 .scrollarea {
   background: #efefef !important;
   padding-right: 0 !important;
   width: 10px !important;
 }
-/* line 45, ../sass/components/_views.scss */
+/* line 37, ../sass/components/_views.scss */
 .scrollarea .scrollbar {
   background: #cccccc !important;
   border-radius: 0 !important;
   width: 10px !important;
 }
 
-/* line 53, ../sass/components/_views.scss */
+/* line 45, ../sass/components/_views.scss */
 .view-school-search .view-data {
   min-height: 15em;
   overflow: hidden;
   padding: 1em 0em 0 0em;
 }
-/* line 57, ../sass/components/_views.scss */
+/* line 49, ../sass/components/_views.scss */
 .view-school-search .view-data:before {
   content: " ";
   display: block;
@@ -731,17 +721,17 @@ nav {
   background-repeat: repeat-x;
   background-position: top left;
 }
-/* line 70, ../sass/components/_views.scss */
+/* line 62, ../sass/components/_views.scss */
 .view-school-search .views-row {
   overflow: hidden;
 }
-/* line 73, ../sass/components/_views.scss */
+/* line 65, ../sass/components/_views.scss */
 .view-school-search .views-column {
   float: left;
   padding: 0 0em 1em 0;
   width: 100%;
 }
-/* line 78, ../sass/components/_views.scss */
+/* line 70, ../sass/components/_views.scss */
 .view-school-search h3 {
   border: 1px solid #cccccc;
   height: 4.5em;
@@ -769,7 +759,7 @@ nav {
   -o-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 102, ../sass/components/_views.scss */
+/* line 94, ../sass/components/_views.scss */
 .view-school-search .filter-buttons .filter {
   background: none;
   border-bottom: 1px solid #cccccc;
@@ -781,40 +771,40 @@ nav {
   -o-transition: all .3s;
   transition: all .3s;
 }
-/* line 109, ../sass/components/_views.scss */
+/* line 101, ../sass/components/_views.scss */
 .view-school-search .filter-buttons .filter:hover {
   background: #cccccc;
 }
-/* line 114, ../sass/components/_views.scss */
+/* line 106, ../sass/components/_views.scss */
 .view-school-search .filter.active {
   background: #050483;
   color: white;
 }
-/* line 117, ../sass/components/_views.scss */
+/* line 109, ../sass/components/_views.scss */
 .view-school-search .filter.active:hover {
   background: #050483;
 }
-/* line 121, ../sass/components/_views.scss */
+/* line 113, ../sass/components/_views.scss */
 .view-school-search .view-item {
   background: white;
 }
 
-/* line 127, ../sass/components/_views.scss */
+/* line 119, ../sass/components/_views.scss */
 .js .mix,
 .mix.no-result {
   display: none;
 }
 
 @media all and (min-width: 40em) {
-  /* line 134, ../sass/components/_views.scss */
+  /* line 126, ../sass/components/_views.scss */
   .view-school-search .views-column {
     width: 50%;
   }
-  /* line 138, ../sass/components/_views.scss */
+  /* line 130, ../sass/components/_views.scss */
   .view-school-search .col-1 {
     padding-right: 1em;
   }
-  /* line 142, ../sass/components/_views.scss */
+  /* line 134, ../sass/components/_views.scss */
   .view-school-search .col-2 {
     padding-right: 0;
     padding-left: 1em;
