@@ -1449,7 +1449,6 @@ h1.site-name, h1.site-name a, h2.site-name, h2.site-name a {
 #site-slogan {
   font-size: .75em;
   font-style: italic;
-  color: #050483;
 }
 
 /* line 47, ../sass/components/_typography.scss */
@@ -1969,7 +1968,7 @@ ul.primary li:toggled {
 
 /* line 11, ../sass/components/_regions.scss */
 img.header__logo-image {
-  height: 90px;
+  height: 95px;
 }
 
 /* line 15, ../sass/components/_regions.scss */
