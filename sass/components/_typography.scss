@@ -38,6 +38,12 @@ h1.site-name, h1.site-name a, h2.site-name, h2.site-name a {
   @include element-invisible;
 }
 
+#site-slogan {
+  font-size: .75em;
+  font-style: italic;
+// color: $accent;
+}
+
 h1.page-title {
   margin-bottom: .5rem; margin-bottom: 8px;
 }
