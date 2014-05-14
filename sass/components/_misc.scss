@@ -193,3 +193,22 @@ ul.pager li a {
 .clearfix:after {
   @include clear-it;
 }
+
+// footer {
+
+footer .region-footer {
+	  a {
+    color: $light-blue;
+	    &:hover {
+		    color: darken($light-blue, 20%);
+	    }
+    }
+    p {
+			a {
+    		color: darken($light-blue, 20%);
+				&:hover {
+		   	 color: darken($light-blue, 40%);
+			 	}
+			}
+    }
+}

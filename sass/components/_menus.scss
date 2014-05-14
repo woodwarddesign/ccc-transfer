@@ -104,9 +104,11 @@ a.menu-link {
 a.menu-link {
   color: $light-blue;
   font-family: $header-font-family;
-  font-weight: 100;
   &.toggled {
-   color: $white;
+   color: $light-blue;
+  }
+  &:hover {
+	  color: darken($light-blue, 15%);
   }
 }
 
@@ -121,11 +123,11 @@ footer .region-footer p a {
   outline: none;
 }
 
-footer .region-footer p a:hover,
-footer .region-footer p a:focus,
-footer .region-footer p a:toggled {
-	  color: darken($light-blue, 30%);
-}
+// footer .region-footer p a:hover,
+// footer .region-footer p a:focus,
+// footer .region-footer p a:toggled {
+//	  color: darken($light-blue, 30%);
+//}
 
 .region-menu .menu li ul,
 .footer-menu.menu li ul  {
