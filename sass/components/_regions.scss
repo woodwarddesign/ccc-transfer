@@ -15,12 +15,12 @@ img.header__logo-image {
 .header__logo-image {
 //  float: left;
   height: auto;
-  margin-right: 1em;
+//  margin-right: 1em;
   position: relative;
 }
 
 .header__name-and-slogan {
-  float: left;
+//  float: left;
  }
 
  .branding-wrapper {
@@ -35,12 +35,20 @@ img.header__logo-image {
 
 .region-branding {
   position: relative;
+  text-align: center;
   .header__logo {
 	    text-align: center;
+  }
+  p {
+	  margin-bottom: 0;
   }
 }
 
 @media all and (min-width: $tab) {
+
+.region-branding {
+	text-align: left;
+}
 
   .branding-wrapper {
     padding: 1em 0;
@@ -56,6 +64,9 @@ img.header__logo-image {
 		.header__logo {
 //			display: inline;
 		}
+    #site-slogan {
+	    margin-left: .6em;
+    }
 	}
 }
 

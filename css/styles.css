@@ -1446,37 +1446,44 @@ h1.site-name, h1.site-name a, h2.site-name, h2.site-name a {
 }
 
 /* line 41, ../sass/components/_typography.scss */
+#site-slogan {
+  font-size: .75em;
+  font-style: italic;
+  color: #050483;
+}
+
+/* line 47, ../sass/components/_typography.scss */
 h1.page-title {
   margin-bottom: .5rem;
   margin-bottom: 8px;
 }
 
-/* line 45, ../sass/components/_typography.scss */
+/* line 51, ../sass/components/_typography.scss */
 h2, h2 a {
   font-size: 30px;
 }
 
-/* line 49, ../sass/components/_typography.scss */
+/* line 55, ../sass/components/_typography.scss */
 h3, h3 a, h2.block__title, h2.pane-title {
   font-size: 26.2px;
 }
 
-/* line 53, ../sass/components/_typography.scss */
+/* line 59, ../sass/components/_typography.scss */
 h4, h4 a {
   font-size: 20px;
 }
 
-/* line 57, ../sass/components/_typography.scss */
+/* line 63, ../sass/components/_typography.scss */
 h5, h5 a {
   font-size: 16.6px;
 }
 
-/* line 61, ../sass/components/_typography.scss */
+/* line 67, ../sass/components/_typography.scss */
 h6, h6 a {
   font-size: 13.4px;
 }
 
-/* line 67, ../sass/components/_typography.scss */
+/* line 73, ../sass/components/_typography.scss */
 h1#page-title,
 .region-sidebar-second h2,
 one.sidebar .region-sidebar-first h2 {
@@ -1487,7 +1494,7 @@ one.sidebar .region-sidebar-first h2 {
   margin-bottom: 0;
   padding: .25em 0;
 }
-/* line 73, ../sass/components/_typography.scss */
+/* line 79, ../sass/components/_typography.scss */
 h1#page-title:before,
 .region-sidebar-second h2:before,
 one.sidebar .region-sidebar-first h2:before {
@@ -1502,64 +1509,64 @@ one.sidebar .region-sidebar-first h2:before {
   background-position: top left;
 }
 
-/* line 91, ../sass/components/_typography.scss */
+/* line 97, ../sass/components/_typography.scss */
 .region-sidebar-second h2,
 one.sidebar .region-sidebar-first h2 {
   background-position: 95% center;
 }
 
 @media all and (min-width: 40em) {
-  /* line 97, ../sass/components/_typography.scss */
+  /* line 103, ../sass/components/_typography.scss */
   body {
     font-size: 18.5px;
   }
-  /* line 99, ../sass/components/_typography.scss */
+  /* line 105, ../sass/components/_typography.scss */
   body.two-sidebars {
     font-size: 16.5px;
   }
-  /* line 102, ../sass/components/_typography.scss */
+  /* line 108, ../sass/components/_typography.scss */
   body.two-sidebars h2, body.two-sidebars h2 a {
     font-size: 27.75px;
   }
-  /* line 106, ../sass/components/_typography.scss */
+  /* line 112, ../sass/components/_typography.scss */
   body.two-sidebars h3, body.two-sidebars h3 a, body.two-sidebars h2.block__title, body.two-sidebars h2.pane-title {
     font-size: 24.235px;
   }
-  /* line 110, ../sass/components/_typography.scss */
+  /* line 116, ../sass/components/_typography.scss */
   body.two-sidebars h4, body.two-sidebars h4 a {
     font-size: 18.5px;
   }
-  /* line 114, ../sass/components/_typography.scss */
+  /* line 120, ../sass/components/_typography.scss */
   body.two-sidebars h5, body.two-sidebars h5 a {
     font-size: 15.355px;
   }
-  /* line 118, ../sass/components/_typography.scss */
+  /* line 124, ../sass/components/_typography.scss */
   body.two-sidebars h6, body.two-sidebars h6 a {
     font-size: 12.395px;
   }
 }
 @media all and (min-width: 60em) {
-  /* line 128, ../sass/components/_typography.scss */
+  /* line 134, ../sass/components/_typography.scss */
   body {
     font-size: 16.5px;
   }
-  /* line 132, ../sass/components/_typography.scss */
+  /* line 138, ../sass/components/_typography.scss */
   body.two-sidebars h2, body.two-sidebars h2 a {
     font-size: 24.75px;
   }
-  /* line 136, ../sass/components/_typography.scss */
+  /* line 142, ../sass/components/_typography.scss */
   body.two-sidebars h3, body.two-sidebars h3 a, body.two-sidebars h2.block__title, body.two-sidebars h2.pane-title {
     font-size: 21.615px;
   }
-  /* line 140, ../sass/components/_typography.scss */
+  /* line 146, ../sass/components/_typography.scss */
   body.two-sidebars h4, body.two-sidebars h4 a {
     font-size: 16.5px;
   }
-  /* line 144, ../sass/components/_typography.scss */
+  /* line 150, ../sass/components/_typography.scss */
   body.two-sidebars h5, body.two-sidebars h5 a {
     font-size: 13.695px;
   }
-  /* line 148, ../sass/components/_typography.scss */
+  /* line 154, ../sass/components/_typography.scss */
   body.two-sidebars h6, body.two-sidebars h6 a {
     font-size: 11.055px;
   }
@@ -1968,13 +1975,7 @@ img.header__logo-image {
 /* line 15, ../sass/components/_regions.scss */
 .header__logo-image {
   height: auto;
-  margin-right: 1em;
   position: relative;
-}
-
-/* line 22, ../sass/components/_regions.scss */
-.header__name-and-slogan {
-  float: left;
 }
 
 /* line 26, ../sass/components/_regions.scss */
@@ -1991,23 +1992,39 @@ img.header__logo-image {
 /* line 36, ../sass/components/_regions.scss */
 .region-branding {
   position: relative;
+  text-align: center;
 }
-/* line 38, ../sass/components/_regions.scss */
+/* line 39, ../sass/components/_regions.scss */
 .region-branding .header__logo {
   text-align: center;
 }
+/* line 42, ../sass/components/_regions.scss */
+.region-branding p {
+  margin-bottom: 0;
+}
 
 @media all and (min-width: 40em) {
-  /* line 45, ../sass/components/_regions.scss */
+  /* line 49, ../sass/components/_regions.scss */
+  .region-branding {
+    text-align: left;
+  }
+
+  /* line 53, ../sass/components/_regions.scss */
   .branding-wrapper {
     padding: 1em 0;
   }
-  /* line 47, ../sass/components/_regions.scss */
+  /* line 55, ../sass/components/_regions.scss */
   .branding-wrapper .header__logo {
     display: inline-block;
   }
 }
-/* line 64, ../sass/components/_regions.scss */
+@media all and (min-width: 60em) {
+  /* line 67, ../sass/components/_regions.scss */
+  .branding-wrapper #site-slogan {
+    margin-left: .6em;
+  }
+}
+/* line 75, ../sass/components/_regions.scss */
 .preface-wrapper {
   background: #fbf9f5;
   margin-bottom: 0;
@@ -2021,17 +2038,17 @@ img.header__logo-image {
   z-index: 1;
 }
 
-/* line 73, ../sass/components/_regions.scss */
+/* line 84, ../sass/components/_regions.scss */
 .preface {
   line-height: 0;
 }
-/* line 76, ../sass/components/_regions.scss */
+/* line 87, ../sass/components/_regions.scss */
 .preface img {
   height: auto;
   width: 100%;
 }
 
-/* line 84, ../sass/components/_regions.scss */
+/* line 95, ../sass/components/_regions.scss */
 #content {
   padding: 15px 0 0;
   background: transparent;
@@ -2039,17 +2056,17 @@ img.header__logo-image {
 }
 
 @media all and (min-width: 60em) {
-  /* line 91, ../sass/components/_regions.scss */
+  /* line 102, ../sass/components/_regions.scss */
   #content {
     padding: 30px 30px 30px 0;
   }
 }
-/* line 96, ../sass/components/_regions.scss */
+/* line 107, ../sass/components/_regions.scss */
 #content .messages {
   padding: 0 20px;
 }
 
-/* line 101, ../sass/components/_regions.scss */
+/* line 112, ../sass/components/_regions.scss */
 .breadcrumb li {
   display: inline-block;
   list-style: none;
@@ -2058,7 +2075,7 @@ img.header__logo-image {
   font-size: 14.5px;
 }
 
-/* line 110, ../sass/components/_regions.scss */
+/* line 121, ../sass/components/_regions.scss */
 h3.tech-support-button {
   background-color: #050483;
   background-image: url("../images/shortcut-light.png");
@@ -2074,7 +2091,7 @@ h3.tech-support-button {
   box-shadow: 2px 2px 4px #a2a2a2;
   margin-bottom: 1em;
 }
-/* line 118, ../sass/components/_regions.scss */
+/* line 129, ../sass/components/_regions.scss */
 h3.tech-support-button a {
   display: block;
   width: 100%;
@@ -2082,11 +2099,11 @@ h3.tech-support-button a {
   font-size: .75em;
   padding: .5rem 1rem;
 }
-/* line 124, ../sass/components/_regions.scss */
+/* line 135, ../sass/components/_regions.scss */
 h3.tech-support-button a:hover {
   color: white;
 }
-/* line 128, ../sass/components/_regions.scss */
+/* line 139, ../sass/components/_regions.scss */
 h3.tech-support-button:hover {
   background-color: #0806cd;
   -webkit-transition: all .3s;
@@ -2095,85 +2112,85 @@ h3.tech-support-button:hover {
   transition: all .3s;
 }
 
-/* line 136, ../sass/components/_regions.scss */
+/* line 147, ../sass/components/_regions.scss */
 .region-sidebar-first {
   padding-top: 15px;
 }
 
 @media all and (min-width: 60em) {
-  /* line 142, ../sass/components/_regions.scss */
+  /* line 153, ../sass/components/_regions.scss */
   .region-sidebar-first,
   .region-sidebar-second {
     padding: 30px;
   }
 
-  /* line 147, ../sass/components/_regions.scss */
+  /* line 158, ../sass/components/_regions.scss */
   .one-sidebar .region-sidebar-first,
   .region-sidebar-second {
     background-color: #eee6d6;
     border-left: 1px solid white;
   }
 
-  /* line 151, ../sass/components/_regions.scss */
+  /* line 162, ../sass/components/_regions.scss */
   #content {
     padding-bottom: 30px;
   }
 }
-/* line 161, ../sass/components/_regions.scss */
+/* line 172, ../sass/components/_regions.scss */
 footer {
   background: #3c3c3c;
   clear: both;
   overflow: hidden;
 }
-/* line 167, ../sass/components/_regions.scss */
+/* line 178, ../sass/components/_regions.scss */
 footer p,
 footer li,
 footer h4 {
   color: #cfe8ef;
 }
-/* line 170, ../sass/components/_regions.scss */
+/* line 181, ../sass/components/_regions.scss */
 footer p {
   font-size: 15px;
   margin-bottom: 0;
 }
 
-/* line 176, ../sass/components/_regions.scss */
+/* line 187, ../sass/components/_regions.scss */
 .region-footer {
   padding: 10px 0;
 }
 
-/* line 180, ../sass/components/_regions.scss */
+/* line 191, ../sass/components/_regions.scss */
 .copyright {
   clear: both;
   overflow: hidden;
   padding-bottom: 2rem;
 }
-/* line 184, ../sass/components/_regions.scss */
+/* line 195, ../sass/components/_regions.scss */
 .copyright p {
   float: left;
   font-size: 12.5px;
 }
 
-/* line 191, ../sass/components/_regions.scss */
+/* line 202, ../sass/components/_regions.scss */
 #block-block-3 {
   clear: both;
   overflow: hidden;
 }
 
 @media all and (min-width: 40em) {
-  /* line 200, ../sass/components/_regions.scss */
+  /* line 211, ../sass/components/_regions.scss */
   .disclaimer-left,
   .disclaimer-right {
     float: left;
     width: 50%;
   }
 
-  /* line 205, ../sass/components/_regions.scss */
+  /* line 216, ../sass/components/_regions.scss */
   .disclaimer-left {
     padding-right: 17px;
   }
 
-  /* line 209, ../sass/components/_regions.scss */
+  /* line 220, ../sass/components/_regions.scss */
   .disclaimer-right {
     padding-left: 17px;
   }
