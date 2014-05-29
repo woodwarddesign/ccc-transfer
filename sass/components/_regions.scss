@@ -42,6 +42,9 @@ img.header__logo-image {
   p {
 	  margin-bottom: 0;
   }
+  #site-slogan {
+	  color: $accent;
+  }
 }
 
 @media all and (min-width: $tab) {
@@ -180,7 +183,6 @@ footer {
   }
   p {
     font-size: $base-font-size * .75;
-    margin-bottom: 0;
     }
 }
 
