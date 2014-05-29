@@ -12,9 +12,28 @@
 	.item-list {
 		padding-top: .25em;
 	}
-
+	h4 {
+		line-height: 1.25em;
+		padding-bottom: .25em;
+		a {
+			font-size: .9em;
+			line-height: 1em;
+		}	
+	}
+	
 	p {
 		margin-bottom: 1em;
+	}
+}
+
+// Newsfeeds 
+
+.view-newsfeeds {
+	.row {
+		background-image: none;
+		&.first {
+			background-image: url('../images/lh-line.png');
+		}
 	}
 }
 
