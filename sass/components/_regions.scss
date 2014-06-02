@@ -194,9 +194,10 @@ footer {
   clear: both;
   overflow: hidden;
   padding-bottom: $vert-spacing;
+
   p {
-    float: left;
     font-size: $base-font-size * .625;
+    text-align: center;
   }
 }
 
