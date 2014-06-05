@@ -2144,12 +2144,13 @@ h3.tech-support-button a {
   color: white;
   font-size: .75em;
   padding: .5rem 1rem;
+  font-weight: bold;
 }
-/* line 138, ../sass/components/_regions.scss */
+/* line 139, ../sass/components/_regions.scss */
 h3.tech-support-button a:hover {
   color: white;
 }
-/* line 142, ../sass/components/_regions.scss */
+/* line 143, ../sass/components/_regions.scss */
 h3.tech-support-button:hover {
   background-color: #3d40b0;
   -webkit-transition: all .3s;
@@ -2158,84 +2159,84 @@ h3.tech-support-button:hover {
   transition: all .3s;
 }
 
-/* line 150, ../sass/components/_regions.scss */
+/* line 151, ../sass/components/_regions.scss */
 .region-sidebar-first {
   padding-top: 15px;
 }
 
 @media all and (min-width: 60em) {
-  /* line 156, ../sass/components/_regions.scss */
+  /* line 157, ../sass/components/_regions.scss */
   .region-sidebar-first,
   .region-sidebar-second {
     padding: 30px;
   }
 
-  /* line 161, ../sass/components/_regions.scss */
+  /* line 162, ../sass/components/_regions.scss */
   .one-sidebar .region-sidebar-first,
   .region-sidebar-second {
     background-color: #eee6d6;
     border-left: 1px solid white;
   }
 
-  /* line 165, ../sass/components/_regions.scss */
+  /* line 166, ../sass/components/_regions.scss */
   #content {
     padding-bottom: 30px;
   }
 }
-/* line 175, ../sass/components/_regions.scss */
+/* line 176, ../sass/components/_regions.scss */
 footer {
   background: #3c3c3c;
   clear: both;
   overflow: hidden;
 }
-/* line 181, ../sass/components/_regions.scss */
+/* line 182, ../sass/components/_regions.scss */
 footer p,
 footer li,
 footer h4 {
   color: #cfe8ef;
 }
-/* line 184, ../sass/components/_regions.scss */
+/* line 185, ../sass/components/_regions.scss */
 footer p {
   font-size: 15px;
 }
 
-/* line 189, ../sass/components/_regions.scss */
+/* line 190, ../sass/components/_regions.scss */
 .region-footer {
   padding: 10px 0;
 }
 
-/* line 193, ../sass/components/_regions.scss */
+/* line 194, ../sass/components/_regions.scss */
 .copyright {
   clear: both;
   overflow: hidden;
   padding-bottom: 2rem;
 }
-/* line 198, ../sass/components/_regions.scss */
+/* line 199, ../sass/components/_regions.scss */
 .copyright p {
   font-size: 12.5px;
   text-align: center;
 }
 
-/* line 205, ../sass/components/_regions.scss */
+/* line 206, ../sass/components/_regions.scss */
 #block-block-3 {
   clear: both;
   overflow: hidden;
 }
 
 @media all and (min-width: 40em) {
-  /* line 214, ../sass/components/_regions.scss */
+  /* line 215, ../sass/components/_regions.scss */
   .disclaimer-left,
   .disclaimer-right {
     float: left;
     width: 50%;
   }
 
-  /* line 219, ../sass/components/_regions.scss */
+  /* line 220, ../sass/components/_regions.scss */
   .disclaimer-left {
     padding-right: 17px;
   }
 
-  /* line 223, ../sass/components/_regions.scss */
+  /* line 224, ../sass/components/_regions.scss */
   .disclaimer-right {
     padding-left: 17px;
   }
